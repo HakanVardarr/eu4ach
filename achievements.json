@@ -1,4 +1,5 @@
 {
+  "current": null,
   "very_hard": {
     "collection": [
       {
@@ -315,11 +316,95 @@
         "difficulty": "Very Hard",
         "id": 318,
         "is_complete": false
+      },
+      {
+        "name": "Crossing the Finnish Line",
+        "description": "Release and play as Finland in 1444 and have a direct land connection to the Cape while your capital is in Nyland/Uusimaa.",
+        "difficulty": "Very Hard",
+        "id": 329,
+        "is_complete": false
+      },
+      {
+        "name": "KHAAAAAAN",
+        "description": "Restore the Mongol Empire before the Age of Absolutism.",
+        "difficulty": "Very Hard",
+        "id": 344,
+        "is_complete": false
       }
     ]
   },
   "hard": {
     "collection": [
+      {
+        "name": "Ultimate Military",
+        "description": "As Songhai, have Prussia and Nepal as marches!",
+        "difficulty": "Hard",
+        "id": 343,
+        "is_complete": false
+      },
+      {
+        "name": "One nation to rule them all",
+        "description": "As Saruhan, have at least 9 loyal vassals with at least 100 development each.",
+        "difficulty": "Hard",
+        "id": 342,
+        "is_complete": false
+      },
+      {
+        "name": "Knights of the Caribbean",
+        "description": "As the Knights, own the Caribbean and every island in the Mediterranean. (Colonies are NOT allowed)",
+        "difficulty": "Hard",
+        "id": 341,
+        "is_complete": false
+      },
+      {
+        "name": "I don't like sand",
+        "description": "Have the most development while owning no province with terrain other than desert or coastal desert.",
+        "difficulty": "Hard",
+        "id": 340,
+        "is_complete": false
+      },
+      {
+        "name": "Australia-Hungary",
+        "description": "Starting as an Australian tribe unite Australia and subjugate Hungary.",
+        "difficulty": "Hard",
+        "id": 339,
+        "is_complete": false
+      },
+      {
+        "name": "The Freest Man in the World",
+        "description": "Ensure that no colonized province in the world produces slaves while having the War Against the World Doctrine government reform enacted.",
+        "difficulty": "Hard",
+        "id": 328,
+        "is_complete": false
+      },
+      {
+        "name": "Holy Horder",
+        "description": "Starting as the Teutonic Order, form the Mongol Empire while have the Holy Horde government reform enacted.",
+        "difficulty": "Hard",
+        "id": 327,
+        "is_complete": false
+      },
+      {
+        "name": "For the Emperor!",
+        "description": "Form Prussia or Germany, have the Empire government rank and 40.000 Marines raised at the same time.",
+        "difficulty": "Hard",
+        "id": 326,
+        "is_complete": false
+      },
+      {
+        "name": "Assembly Instructions Needed",
+        "description": "Form Scandinavia and revoke the privilegia of the Holy Roman Empire while being the Emperor.",
+        "difficulty": "Hard",
+        "id": 325,
+        "is_complete": false
+      },
+      {
+        "name": "Almost Prussian Blue",
+        "description": "Starting as the Livonian Order, form Livonia and own the territory of the North German Confederation as core provinces.",
+        "difficulty": "Hard",
+        "id": 324,
+        "is_complete": false
+      },
       {
         "name": "A blessed Nation",
         "description": "As a Coptic Nation, gain all 5 blessings",
@@ -1387,11 +1472,74 @@
         "difficulty": "Medium",
         "id": 313,
         "is_complete": false
+      },
+      {
+        "name": "Atwix Legacy",
+        "description": "Have 10 personal unions at the same time..",
+        "difficulty": "Medium",
+        "id": 333,
+        "is_complete": false
+      },
+      {
+        "name": "Fugger Banking",
+        "description": "As Augsburg, subsidize 3 Great Powers 20% of their income while having less than 20 provinces.",
+        "difficulty": "Medium",
+        "id": 334,
+        "is_complete": false
+      },
+      {
+        "name": "Golden Wind",
+        "description": "As Air, make 50 ducats profit per month and have 50% of your income made through gold provinces.",
+        "difficulty": "Medium",
+        "id": 335,
+        "is_complete": false
+      },
+      {
+        "name": "Mansa Musa",
+        "description": "As Mali, give 10k ducats away to another great power without having a single loan or being bankrupt.",
+        "difficulty": "Medium",
+        "id": 335,
+        "is_complete": false
+      },
+      {
+        "name": "Swahili Persuasion",
+        "description": "As Kilwa, convert all of the Moluccas and Indonesia.",
+        "difficulty": "Medium",
+        "id": 336,
+        "is_complete": false
+      },
+      {
+        "name": "This is fine",
+        "description": "Have at least +10 Global Unrest and be in a winning coalition war, which was targeted against you.",
+        "difficulty": "Medium",
+        "id": 337,
+        "is_complete": false
+      },
+      {
+        "name": "Where are the penguins?",
+        "description": "As a Malagasy country, unite Madagascar and hold all the most southern provinces of the world.",
+        "difficulty": "Medium",
+        "id": 338,
+        "is_complete": false
       }
     ]
   },
   "easy": {
     "collection": [
+      {
+        "name": "Surfing USA",
+        "description": "Form the USA as Hawaii.",
+        "difficulty": "Easy",
+        "id": 332,
+        "is_complete": false
+      },
+      {
+        "name": "Shemot is Not",
+        "description": "As a Jewish nation, convert all of Egypt to Jewish while having the Jewish Community Aspect active.",
+        "difficulty": "Easy",
+        "id": 331,
+        "is_complete": false
+      },
       {
         "name": "Purify the Temple",
         "description": "Starting as Riga, enact the Salvific Plutocracy government reform and raid the heretic church of Rome.",
@@ -1984,6 +2132,13 @@
   },
   "very_easy": {
     "collection": [
+      {
+        "name": "Imposter Syndrome",
+        "description": "As Sus, have three countries hostile to you (less than 0 opinion) after they discovered your spy.",
+        "difficulty": "Very Easy",
+        "id": 330,
+        "is_complete": false
+      },
       {
         "name": "A Golden Empire!",
         "description": "Enact a golden age as an empire",

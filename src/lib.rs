@@ -12,7 +12,7 @@ pub fn run() -> Result<(), Box<dyn std::error::Error>> {
     let mut file = std::fs::File::open("achievements.json")?;
     let mut text = String::new();
     file.read_to_string(&mut text)?;
-    let list: List = serde_json::from_str(&text)?;
+    let mut list: List = serde_json::from_str(&text)?;
     let mut count = 0;
 
     macro_rules! achievement {
@@ -45,13 +45,16 @@ pub fn run() -> Result<(), Box<dyn std::error::Error>> {
 
     if args.len() < 2 {
         println!("USAGE:");
-        println!("     eu4ach random: random achievement");
-        println!("     eu4ach veasy: random very easy achievement");
-        println!("     eu4ach easy: random  easy achievement");
-        println!("     eu4ach medium: random  medium achievement");
-        println!("     eu4ach hard: random hard achievement");
-        println!("     eu4ach very_hard: random very hard achievement");
+        println!("     eu4ach random:                 random achievement");
+        println!("     eu4ach veasy:                  random very easy achievement");
+        println!("     eu4ach easy:                   random  easy achievement");
+        println!("     eu4ach medium:                 random  medium achievement");
+        println!("     eu4ach hard:                   random hard achievement");
+        println!("     eu4ach very_hard:              random very hard achievement");
         println!("     eu4ach complete <id : number>: complete achievement");
+        println!("     eu4ach track <id : number>:    tracks the given achievement");
+        println!("     eu4ach current:                current achievement");
+        println!("     eu4ach clear:                  clears the current achievement");
 
         std::process::exit(0);
     }
@@ -89,11 +92,75 @@ pub fn run() -> Result<(), Box<dyn std::error::Error>> {
             let id = &args[2].trim().parse::<usize>().unwrap();
             complete_achievement(list, *id);
         }
+        "TRACK" => {
+            let id = &args[2].trim().parse::<usize>().unwrap();
+            track_achievement(list, *id);
+        }
+        "CURRENT" => {
+            if let Some(ach) = list.current {
+                println!("{} ({}): {}", ach.name, ach.id, ach.description);
+            } else {
+                println!("You are not trackking an achievement right now");
+            }
+        }
+        "CLEAR" => {
+            list.current = None;
+            let mut file = std::fs::File::create("achievements.json").unwrap();
+            let text = serde_json::to_string_pretty(&list).unwrap();
+            file.write_all(text.as_bytes()).unwrap();
+        }
 
         _ => {}
     }
 
     Ok(())
+}
+
+fn track_achievement(list: List, id: usize) {
+    let found = false;
+    let mut very_easy: Vec<Achievement> = vec![];
+    let mut easy: Vec<Achievement> = vec![];
+    let mut medium: Vec<Achievement> = vec![];
+    let mut hard: Vec<Achievement> = vec![];
+    let mut very_hard: Vec<Achievement> = vec![];
+    let mut tracked_ach: Option<Achievement> = None;
+    macro_rules! ach {
+        ($($name:ident).+) => {
+            if !found {
+                for ach in list.$($name).+.collection {
+                    let aid = ach.id;
+                    if aid == id {
+                        tracked_ach = Some(ach.clone());
+                    }
+                    $($name).+.push(ach);
+                };
+            }
+        }
+    }
+
+    ach!(very_easy);
+    ach!(easy);
+    ach!(medium);
+    ach!(hard);
+    ach!(very_hard);
+
+    if let Some(ach) = tracked_ach {
+        let new_list = List {
+            current: Some(ach),
+            very_hard: VeryHardAchievements {
+                collection: very_hard,
+            },
+            hard: HardAchievements { collection: hard },
+            medium: MediumAchievements { collection: medium },
+            easy: EasyAchievements { collection: easy },
+            very_easy: VeryEasyAchievements {
+                collection: very_easy,
+            },
+        };
+        let mut file = std::fs::File::create("achievements.json").unwrap();
+        let text = serde_json::to_string_pretty(&new_list).unwrap();
+        file.write_all(text.as_bytes()).unwrap();
+    }
 }
 
 fn complete_achievement(list: List, id: usize) {
@@ -125,6 +192,7 @@ fn complete_achievement(list: List, id: usize) {
     ach!(very_hard);
 
     let new_list = List {
+        current: list.current,
         very_hard: VeryHardAchievements {
             collection: very_hard,
         },

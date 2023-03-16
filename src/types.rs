@@ -38,6 +38,8 @@ pub struct VeryEasyAchievements {
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct List {
+    #[serde(default)]
+    pub current: Option<Achievement>,
     pub very_hard: VeryHardAchievements,
     pub hard: HardAchievements,
     pub medium: MediumAchievements,
