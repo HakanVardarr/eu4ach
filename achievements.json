@@ -1,0 +1,2220 @@
+{
+  "very_hard": {
+    "collection": [
+      {
+        "name": "A Sun God",
+        "description": "Form Inca, embrace all institutions and own all of South America as core provinces",
+        "difficulty": "Very Hard",
+        "id": 10,
+        "is_complete": false
+      },
+      {
+        "name": "Academical",
+        "description": "As Athens, own 50 universities",
+        "difficulty": "Very Hard",
+        "id": 15,
+        "is_complete": false
+      },
+      {
+        "name": "African Power",
+        "description": "Own and have cores on all provinces in Africa as Kongo.",
+        "difficulty": "Very Hard",
+        "id": 17,
+        "is_complete": false
+      },
+      {
+        "name": "Albania or Iberia",
+        "description": "As Albania, own or have a subject own Iberia and the Caucasus",
+        "difficulty": "Very Hard",
+        "id": 19,
+        "is_complete": false
+      },
+      {
+        "name": "An Unlikely Candidate",
+        "description": "Starting as Mzab, Touggourt or Djerid, reform Al-Andalus.",
+        "difficulty": "Very Hard",
+        "id": 25,
+        "is_complete": false
+      },
+      {
+        "name": "Around the World in 80 Years",
+        "description": "Starting as a Custom Nation of up to 400 points in the British Region, own New York, San Francisco, Suez, Bombay, Calcutta, Hong Kong and Yokohama by 1524.11.11.",
+        "difficulty": "Very Hard",
+        "id": 28,
+        "is_complete": false
+      },
+      {
+        "name": "Avar Khangate",
+        "description": "Achieve Empire rank and conquer Hungary as Avaria.",
+        "difficulty": "Very Hard",
+        "id": 31,
+        "is_complete": false
+      },
+      {
+        "name": "Basileus",
+        "description": "As Byzantium, restore the Roman Empire",
+        "difficulty": "Very Hard",
+        "id": 38,
+        "is_complete": false
+      },
+      {
+        "name": "Basque in Glory",
+        "description": "Starting as Navarra, ensure that most of Iberia is Basque culture before the Age of Absolutism.",
+        "difficulty": "Very Hard",
+        "id": 39,
+        "is_complete": false
+      },
+      {
+        "name": "Big Blue Blob",
+        "description": "As France, hold 100 European core provinces before 1500",
+        "difficulty": "Very Hard",
+        "id": 42,
+        "is_complete": false
+      },
+      {
+        "name": "Choson One",
+        "description": "As Korea, own or have a subject own all Shinto, Confucian and Buddhist provinces in the world.",
+        "difficulty": "Very Hard",
+        "id": 55,
+        "is_complete": false
+      },
+      {
+        "name": "Cotton Kandy",
+        "description": "As Kandy be production leader in Cotton.",
+        "difficulty": "Very Hard",
+        "id": 63,
+        "is_complete": false
+      },
+      {
+        "name": "Empire of Mann",
+        "description": "As Mann, conquer all Islands in the world.",
+        "difficulty": "Very Hard",
+        "id": 82,
+        "is_complete": false
+      },
+      {
+        "name": "First come, First Serve",
+        "description": "Starting as a Western Technology Custom nation in North America or South America with no more than 200 points, unite the two continents.",
+        "difficulty": "Very Hard",
+        "id": 88,
+        "is_complete": false
+      },
+      {
+        "name": "Foremost Servitor of Jagannath",
+        "description": "Start os Orissa and own or have a subject own all tropical wood provinces",
+        "difficulty": "Very Hard",
+        "id": 91,
+        "is_complete": false
+      },
+      {
+        "name": "Frozen Assets",
+        "description": "Start as Novgorod and control 90% of the trade power in the white sea trade node while it is the highest valued trade node in the world.",
+        "difficulty": "Very Hard",
+        "id": 97,
+        "is_complete": false
+      },
+      {
+        "name": "Gothic Invasion",
+        "description": "Start as Theodoro and conquer all Germanic culture provinces in Europe",
+        "difficulty": "Very Hard",
+        "id": 107,
+        "is_complete": false
+      },
+      {
+        "name": "Great Perm",
+        "description": "As Perm, own or have a subject own the Russian, Siberian, Scandinavian, Canadian, Hudson Bay and Cascadian regions",
+        "difficulty": "Very Hard",
+        "id": 111,
+        "is_complete": false
+      },
+      {
+        "name": "I'll graze my horse here.. And here…",
+        "description": "As a Horde, own over 200 provinces producing grain",
+        "difficulty": "Very Hard",
+        "id": 119,
+        "is_complete": false
+      },
+      {
+        "name": "Inner Turmoil",
+        "description": "Starting as The Isles, own 20 provinces by 1500, none of which are on Islands.",
+        "difficulty": "Very Hard",
+        "id": 124,
+        "is_complete": false
+      },
+      {
+        "name": "Jihad",
+        "description": "As Najd, own 500 Sunni provinces",
+        "difficulty": "Very Hard",
+        "id": 131,
+        "is_complete": false
+      },
+      {
+        "name": "Komnenoi empire",
+        "description": "As Trebizond, have the empire government rank",
+        "difficulty": "Very Hard",
+        "id": 138,
+        "is_complete": false
+      },
+      {
+        "name": "Meissner Porcelain",
+        "description": "As Saxony, own or have a subject own all chinaware provinces in the world",
+        "difficulty": "Very Hard",
+        "id": 161,
+        "is_complete": false
+      },
+      {
+        "name": "Never say Nevers",
+        "description": "As Nevers, own the entire France region as core provinces.",
+        "difficulty": "Very Hard",
+        "id": 170,
+        "is_complete": false
+      },
+      {
+        "name": "Norwegian Wood",
+        "description": "Own or have a subject own all naval supplies provinces as Norway",
+        "difficulty": "Very Hard",
+        "id": 174,
+        "is_complete": false
+      },
+      {
+        "name": "Rags and Riches",
+        "description": "Have the higest income in the world while owning no province with a development level higher than 10.",
+        "difficulty": "Very Hard",
+        "id": 197,
+        "is_complete": false
+      },
+      {
+        "name": "Raja of the Rajput Reich",
+        "description": "Conquer all of Germany as Nagaur",
+        "difficulty": "Very Hard",
+        "id": 198,
+        "is_complete": false
+      },
+      {
+        "name": "Saladin's Legacy",
+        "description": "Playing as Hisn Kayfa, reforge the Ayyubid Empire.",
+        "difficulty": "Very Hard",
+        "id": 209,
+        "is_complete": false
+      },
+      {
+        "name": "Shahanshah",
+        "description": "Start as Tabarestan and form Persia",
+        "difficulty": "Very Hard",
+        "id": 211,
+        "is_complete": false
+      },
+      {
+        "name": "Spanish Fly",
+        "description": "Starting as Offaly, secure a Personal Union over an Iberian nation.",
+        "difficulty": "Very Hard",
+        "id": 218,
+        "is_complete": false
+      },
+      {
+        "name": "Sunset Invasion",
+        "description": "Own and have cores on Lisbon, Madrid, Parid, London, Amsterdam and Rome as the Aztecs",
+        "difficulty": "Very Hard",
+        "id": 224,
+        "is_complete": false
+      },
+      {
+        "name": "The Buddhists Strike Back",
+        "description": "As Ceylon, own all of India and convert it to Theravada Buddhism (do not form another nation)",
+        "difficulty": "Very Hard",
+        "id": 241,
+        "is_complete": false
+      },
+      {
+        "name": "The Fezzan Corridors",
+        "description": "As Fezzan, control at least 90% of the trade power in Tunis, Katsina, Safi and Timbuktu",
+        "difficulty": "Very Hard",
+        "id": 247,
+        "is_complete": false
+      },
+      {
+        "name": "The first Toungoo Empire",
+        "description": "As Taungu, unite the Burman culture group by 1500",
+        "difficulty": "Very Hard",
+        "id": 248,
+        "is_complete": false
+      },
+      {
+        "name": "The Great Khan",
+        "description": "Starting as Mongolia or Great Horde, own or have a subject own the Chinese, Russian and Persian regions.",
+        "difficulty": "Very Hard",
+        "id": 251,
+        "is_complete": false
+      },
+      {
+        "name": "The Pheasant Strut",
+        "description": "As Gorkha form Nepal and defeat Prussia with at least 100,000 Prussian casualties in a war (both have to be primary targets of war).",
+        "difficulty": "Very Hard",
+        "id": 258,
+        "is_complete": false
+      },
+      {
+        "name": "The Re-Reconquista",
+        "description": "As Granada, form Andalusia and reconquer all of Iberia",
+        "difficulty": "Very Hard",
+        "id": 261,
+        "is_complete": false
+      },
+      {
+        "name": "The Third Way",
+        "description": "Start as an Ibadi nation and eliminate all rival schools of Islam (do not convert to another religion)",
+        "difficulty": "Very Hard",
+        "id": 267,
+        "is_complete": false
+      },
+      {
+        "name": "This is Persia!",
+        "description": "Form Persia and own Egypt, Anatolia and Greece as core provinces",
+        "difficulty": "Very Hard",
+        "id": 274,
+        "is_complete": false
+      },
+      {
+        "name": "We bled for this",
+        "description": "Win a war with at least 1 million dead on both sides",
+        "difficulty": "Very Hard",
+        "id": 300,
+        "is_complete": false
+      },
+      {
+        "name": "Where the heart is",
+        "description": "As Dahomey, force all non-Fetishist nations out of Niger and Sahel by 1500",
+        "difficulty": "Very Hard",
+        "id": 302,
+        "is_complete": false
+      },
+      {
+        "name": "Why is the Rûm gone!?",
+        "description": "As Asturias, establish an Order in Rum.",
+        "difficulty": "Very Hard",
+        "id": 303,
+        "is_complete": false
+      },
+      {
+        "name": "World Conquerer",
+        "description": "Own or have a subject own the entire world.",
+        "difficulty": "Very Hard",
+        "id": 306,
+        "is_complete": false
+      },
+      {
+        "name": "New, New Deli",
+        "description": "As Deli, have your capital in the Delhi province.",
+        "difficulty": "Very Hard",
+        "id": 317,
+        "is_complete": false
+      },
+      {
+        "name": "Quizquiz Pro Quo",
+        "description": "As Quizquiz, have your capital in the Anjou province.",
+        "difficulty": "Very Hard",
+        "id": 318,
+        "is_complete": false
+      }
+    ]
+  },
+  "hard": {
+    "collection": [
+      {
+        "name": "A blessed Nation",
+        "description": "As a Coptic Nation, gain all 5 blessings",
+        "difficulty": "Hard",
+        "id": 1,
+        "is_complete": false
+      },
+      {
+        "name": "A Decent Reserve",
+        "description": "Have a maximum manpower of at least 1 million",
+        "difficulty": "Hard",
+        "id": 2,
+        "is_complete": false
+      },
+      {
+        "name": "A Hero's Welcome",
+        "description": "Starting as Karaman, form the Sultanate of Rum.",
+        "difficulty": "Hard",
+        "id": 5,
+        "is_complete": false
+      },
+      {
+        "name": "A Kaiser not just in name",
+        "description": "Enact all reform in the HRE",
+        "difficulty": "Hard",
+        "id": 6,
+        "is_complete": false
+      },
+      {
+        "name": "A Manchurian Candidate",
+        "description": "Start as one of the Jurchen tribes and form Qing",
+        "difficulty": "Hard",
+        "id": 7,
+        "is_complete": false
+      },
+      {
+        "name": "An Early Reich",
+        "description": "Form Germany",
+        "difficulty": "Hard",
+        "id": 23,
+        "is_complete": false
+      },
+      {
+        "name": "Anglophile",
+        "description": "Complete all English and British missions.",
+        "difficulty": "Hard",
+        "id": 26,
+        "is_complete": false
+      },
+      {
+        "name": "Auld Alliance Reversed",
+        "description": "As Scotland, have France as a vassal (do not form Great Britain)",
+        "difficulty": "Hard",
+        "id": 30,
+        "is_complete": false
+      },
+      {
+        "name": "Back in Control",
+        "description": "Form Yuan and be the only nation holding land in China.",
+        "difficulty": "Hard",
+        "id": 34,
+        "is_complete": false
+      },
+      {
+        "name": "Back to the Piast",
+        "description": "As Mazovia or Silesia, form the nation of Poland",
+        "difficulty": "Hard",
+        "id": 35,
+        "is_complete": false
+      },
+      {
+        "name": "Baltic Crusader",
+        "description": "As Teutonic order or Livonian order, own all of Russia as core provinces and convert it to Catholic",
+        "difficulty": "Hard",
+        "id": 36,
+        "is_complete": false
+      },
+      {
+        "name": "Better than Napoleon",
+        "description": "As France, own Vienna, Berlin and Moscow as core provinces",
+        "difficulty": "Hard",
+        "id": 41,
+        "is_complete": false
+      },
+      {
+        "name": "Bunte Kuh",
+        "description": "As Hamburg, trade in both Gems and Livestock.",
+        "difficulty": "Hard",
+        "id": 50,
+        "is_complete": false
+      },
+      {
+        "name": "Consulate of the Sea",
+        "description": "As Aragon, conquer all Mediterranean Centers of Trade",
+        "difficulty": "Hard",
+        "id": 61,
+        "is_complete": false
+      },
+      {
+        "name": "Dar al-Islam",
+        "description": "Unify Islam under your rule.",
+        "difficulty": "Hard",
+        "id": 66,
+        "is_complete": false
+      },
+      {
+        "name": "Dovmont's Own",
+        "description": "Starting as Pskov, have 100 standing Streltsy units.",
+        "difficulty": "Hard",
+        "id": 74,
+        "is_complete": false
+      },
+      {
+        "name": "Dracula's Revenge",
+        "description": "Start as Wallachia or Moldavia, form Romania and own or have a subject own all of the Balkans.",
+        "difficulty": "Hard",
+        "id": 76,
+        "is_complete": false
+      },
+      {
+        "name": "Emperor of Hindustan",
+        "description": "Starting as Delhi, Restore their Empire's borders.",
+        "difficulty": "Hard",
+        "id": 81,
+        "is_complete": false
+      },
+      {
+        "name": "Everything's Coming Up Mulhouse",
+        "description": "Starting as Mulhouse, become Emperor of the HRE and completely decentralize the Empire.",
+        "difficulty": "Hard",
+        "id": 84,
+        "is_complete": false
+      },
+      {
+        "name": "Fanatic Collectivist",
+        "description": "Own all Insitituion origin provinces.",
+        "difficulty": "Hard",
+        "id": 86,
+        "is_complete": false
+      },
+      {
+        "name": "Forever Golden",
+        "description": "Complete the Spanish Mission Tree.",
+        "difficulty": "Hard",
+        "id": 92,
+        "is_complete": false
+      },
+      {
+        "name": "From Humble Origins",
+        "description": "Starting as a custom nation with no more than 50 points, have at least 2000 development",
+        "difficulty": "Hard",
+        "id": 96,
+        "is_complete": false
+      },
+      {
+        "name": "Global Hegemony",
+        "description": "Reach 100% Strength as any type of Hegemon.",
+        "difficulty": "Hard",
+        "id": 102,
+        "is_complete": false
+      },
+      {
+        "name": "Good King René",
+        "description": "Start as Provence, form the Kingdom of Jerusalem.",
+        "difficulty": "Hard",
+        "id": 106,
+        "is_complete": false
+      },
+      {
+        "name": "Guarantor of Peace",
+        "description": "Guarantee the indepence of France, the Ottoman empire and Russia",
+        "difficulty": "Hard",
+        "id": 112,
+        "is_complete": false
+      },
+      {
+        "name": "Holy Trinity",
+        "description": "As the papacy, own Jerusalem and have Livonian order, Teutonic order and the Knights as marches",
+        "difficulty": "Hard",
+        "id": 117,
+        "is_complete": false
+      },
+      {
+        "name": "It's All Greek To Me",
+        "description": "Form Greece and own and have cores on Zeta, Thatta, Lamba, and Roh.",
+        "difficulty": "Hard",
+        "id": 128,
+        "is_complete": false
+      },
+      {
+        "name": "King of Jerusalem",
+        "description": "Form the Kingdom of Jerusalem as Cyprus or The Knights",
+        "difficulty": "Hard",
+        "id": 134,
+        "is_complete": false
+      },
+      {
+        "name": "Kinslayer",
+        "description": "As Tver, Yaroslavl, Ryazan or Odoyev, eliminate all other Rurikovich nations without changing your ruling dynasty.",
+        "difficulty": "Hard",
+        "id": 136,
+        "is_complete": false
+      },
+      {
+        "name": "Lazarus",
+        "description": "As Serbia, own the entire Balkans as core provinces.",
+        "difficulty": "Hard",
+        "id": 145,
+        "is_complete": false
+      },
+      {
+        "name": "Luck of the Irish",
+        "description": "Own and have cores on the British Isles as an Irish nation",
+        "difficulty": "Hard",
+        "id": 150,
+        "is_complete": false
+      },
+      {
+        "name": "Lucky Lucca",
+        "description": "As Lucca, own Lucknow!",
+        "difficulty": "Hard",
+        "id": 151,
+        "is_complete": false
+      },
+      {
+        "name": "Mare Nostrum",
+        "description": "Restore the Roman empire and own the entire Mediterranean and Black Sea coast lines.",
+        "difficulty": "Hard",
+        "id": 155,
+        "is_complete": false
+      },
+      {
+        "name": "Mass Production",
+        "description": "Starting as Odoyev, own one of every manufactory.",
+        "difficulty": "Hard",
+        "id": 159,
+        "is_complete": false
+      },
+      {
+        "name": "Master of India",
+        "description": "Own and have cores on all of India as a European nation",
+        "difficulty": "Hard",
+        "id": 160,
+        "is_complete": false
+      },
+      {
+        "name": "Mewar Never Changes",
+        "description": "Complete the Mewar Mission Tree.",
+        "difficulty": "Hard",
+        "id": 162,
+        "is_complete": false
+      },
+      {
+        "name": "On the Rhodes Again",
+        "description": "Starting as The Knights, conquer and core Constantinople, Jerusalem and Antioch.",
+        "difficulty": "Hard",
+        "id": 178,
+        "is_complete": false
+      },
+      {
+        "name": "Over a Thousand! ",
+        "description": "Own 1001 provinces directly.",
+        "difficulty": "Hard",
+        "id": 183,
+        "is_complete": false
+      },
+      {
+        "name": "Pandya Empire",
+        "description": "Starting as Madurai, conquer the Pandya Territories.",
+        "difficulty": "Hard",
+        "id": 184,
+        "is_complete": false
+      },
+      {
+        "name": "Philippine Tiger",
+        "description": "As Cebu, recreate the Chola Empire.",
+        "difficulty": "Hard",
+        "id": 186,
+        "is_complete": false
+      },
+      {
+        "name": "Pick your Poison",
+        "description": "As Kaffa, develop in Cafa while a subject of yours owns it.",
+        "difficulty": "Hard",
+        "id": 187,
+        "is_complete": false
+      },
+      {
+        "name": "Prester John",
+        "description": "Own and have cores on Alexandria, Antioch and Constantinople as Coptic Ethiopia",
+        "difficulty": "Hard",
+        "id": 191,
+        "is_complete": false
+      },
+      {
+        "name": "Protect the Secret",
+        "description": "As Yemen, prevent any European Nation from owning a Coffee-producing province in the Old World until 1700.",
+        "difficulty": "Hard",
+        "id": 192,
+        "is_complete": false
+      },
+      {
+        "name": "Qing of China",
+        "description": "Become Chinese Emperor As Qing",
+        "difficulty": "Hard",
+        "id": 194,
+        "is_complete": false
+      },
+      {
+        "name": "Sailor Mon",
+        "description": "As Pegu, have at least 100,000 sailors",
+        "difficulty": "Hard",
+        "id": 207,
+        "is_complete": false
+      },
+      {
+        "name": "Sons of Carthage",
+        "description": "As Tunisia, own and have cores on Sicily, Sardinia, the Balearic Islands, the coast of Algiers and the southern coast of Spain.",
+        "difficulty": "Hard",
+        "id": 215,
+        "is_complete": false
+      },
+      {
+        "name": "Spaghetti Western",
+        "description": "Starting as Bologna, become Mexico or Texas.",
+        "difficulty": "Hard",
+        "id": 216,
+        "is_complete": false
+      },
+      {
+        "name": "Spain is the Emperor",
+        "description": "Become the emperor of the HRE as Spain",
+        "difficulty": "Hard",
+        "id": 217,
+        "is_complete": false
+      },
+      {
+        "name": "Stern des Südens",
+        "description": "Form Bavaria starting as München and have your Subject Bremen own Werder.",
+        "difficulty": "Hard",
+        "id": 219,
+        "is_complete": false
+      },
+      {
+        "name": "Stiff Upper Lippe",
+        "description": "As Lippe, own all of the British Isles.",
+        "difficulty": "Hard",
+        "id": 220,
+        "is_complete": false
+      },
+      {
+        "name": "Sun Invasion",
+        "description": "As the Madyas, own and have cores on Tepeacac, Mexico, Tullucan and Huastec.",
+        "difficulty": "Hard",
+        "id": 223,
+        "is_complete": false
+      },
+      {
+        "name": "Sworn Fealty",
+        "description": "Starting as an Arabian Tribal Federation, unite Arabia and have Maximum tribal Allegiance.",
+        "difficulty": "Hard",
+        "id": 229,
+        "is_complete": false
+      },
+      {
+        "name": "Terra Mariana",
+        "description": "As Riga, own the Baltic region as core provinces",
+        "difficulty": "Hard",
+        "id": 233,
+        "is_complete": false
+      },
+      {
+        "name": "That's a Silk Road",
+        "description": "Own or have a subject own all provinces in the world producing Silk.",
+        "difficulty": "Hard",
+        "id": 237,
+        "is_complete": false
+      },
+      {
+        "name": "The 52 Garhs",
+        "description": "As Garhwal own and maintain 52 forts without going into debt.",
+        "difficulty": "Hard",
+        "id": 238,
+        "is_complete": false
+      },
+      {
+        "name": "The Animal Kingdom",
+        "description": "As Manipur, unite the Bengal region and convert it to Animism",
+        "difficulty": "Hard",
+        "id": 239,
+        "is_complete": false
+      },
+      {
+        "name": "The Chrysanthemum Throne",
+        "description": "Unite Japan as a Daimyo",
+        "difficulty": "Hard",
+        "id": 243,
+        "is_complete": false
+      },
+      {
+        "name": "The Grand Armada",
+        "description": "Have 500 heavy ships and no loans",
+        "difficulty": "Hard",
+        "id": 250,
+        "is_complete": false
+      },
+      {
+        "name": "The pen is mightier than the sword",
+        "description": "Have three unions at the same time as Austria",
+        "difficulty": "Hard",
+        "id": 257,
+        "is_complete": false
+      },
+      {
+        "name": "The sun never sets on the Indian Empire",
+        "description": "Form Hindustand or Bharat and own or have a subject own Cape, London, Hong Kong (Canton), and Ottawa (Kichesipi).",
+        "difficulty": "Hard",
+        "id": 266,
+        "is_complete": false
+      },
+      {
+        "name": "These Banners need a Saga",
+        "description": "Have 100 regiments as Banners raised at the same time",
+        "difficulty": "Hard",
+        "id": 272,
+        "is_complete": false
+      },
+      {
+        "name": "Tiger of Mysore",
+        "description": "Starting as Mysore, Conquer the Deccan and Coromandel Regions.",
+        "difficulty": "Hard",
+        "id": 278,
+        "is_complete": false
+      },
+      {
+        "name": "Turkish Delight",
+        "description": "Start as Candar and own 20 Sugar provinces between you and your subjects",
+        "difficulty": "Hard",
+        "id": 288,
+        "is_complete": false
+      },
+      {
+        "name": "Venetian Sea",
+        "description": "Have a 90% trade share in both the Alexandria and Constantinople nodes as Venice, owning less than 10 cities",
+        "difficulty": "Hard",
+        "id": 294,
+        "is_complete": false
+      },
+      {
+        "name": "With a little help",
+        "description": "As Ragusa, lead a Trade League of at least 5 nations and guarantee the Ottoman's independence",
+        "difficulty": "Hard",
+        "id": 305,
+        "is_complete": false
+      },
+      {
+        "name": "Yarr Harr a Pirate's Life For Me",
+        "description": "Choose to play as New Providence and conquer all of Caribbeans.",
+        "difficulty": "Hard",
+        "id": 308,
+        "is_complete": false
+      },
+      {
+        "name": "Østindisk Kompagni Te",
+        "description": "As Denmark establish Trade company and have at least 10% Tea market share.",
+        "difficulty": "Hard",
+        "id": 310,
+        "is_complete": false
+      },
+      {
+        "name": "Keep the Flame Burning",
+        "description": "As a Zoroastrian nation, own all Religious Centers and Monument Baku Ateshgah on tier 3.",
+        "difficulty": "Hard",
+        "id": 314,
+        "is_complete": false
+      },
+      {
+        "name": "Spice Girls",
+        "description": "Having a female ruler, have active trading bonuses for Cloves, Spices, Salt and Sugar.",
+        "difficulty": "Hard",
+        "id": 315,
+        "is_complete": false
+      },
+      {
+        "name": "Wonderful",
+        "description": "Own 8 different monuments on tier 3.",
+        "difficulty": "Hard",
+        "id": 316,
+        "is_complete": false
+      }
+    ]
+  },
+  "medium": {
+    "collection": [
+      {
+        "name": "A Fine Goosestep",
+        "description": "Form Prussia and have at least 125% discipline",
+        "difficulty": "Medium",
+        "id": 3,
+        "is_complete": false
+      },
+      {
+        "name": "A tale of two Families.",
+        "description": "Starting as Vijayanagar or Bahmanis conquer the other's capital and have them not exist.",
+        "difficulty": "Medium",
+        "id": 11,
+        "is_complete": false
+      },
+      {
+        "name": "AEIOU",
+        "description": "Complete the Austrian mission tree.",
+        "difficulty": "Medium",
+        "id": 16,
+        "is_complete": false
+      },
+      {
+        "name": "All Your Trade Are Belong to Us",
+        "description": "Have the highest trade power in Genoa, Venice and the English channel while having an income of at least 300 ducats per month",
+        "difficulty": "Medium",
+        "id": 22,
+        "is_complete": false
+      },
+      {
+        "name": "Arabian Coffee",
+        "description": "Form Arabia and be the nation producing the most coffee in the world",
+        "difficulty": "Medium",
+        "id": 27,
+        "is_complete": false
+      },
+      {
+        "name": "Barbarossa",
+        "description": "As a Maghrebi nation, have 500 light ships privateering at the same time",
+        "difficulty": "Medium",
+        "id": 37,
+        "is_complete": false
+      },
+      {
+        "name": "Bengal Tiger",
+        "description": "Start as Bengal and own Samarkand as a core province",
+        "difficulty": "Medium",
+        "id": 40,
+        "is_complete": false
+      },
+      {
+        "name": "Bleed them Dry",
+        "description": "Have 10 different war reparations being paid to you at the same time.",
+        "difficulty": "Medium",
+        "id": 44,
+        "is_complete": false
+      },
+      {
+        "name": "Breaking the Yoke",
+        "description": "As Ryazan, own Saratov, Crimea and Kazan while being independent.",
+        "difficulty": "Medium",
+        "id": 47,
+        "is_complete": false
+      },
+      {
+        "name": "Carthago Delenda Est",
+        "description": "As an Italian culture nation, make sure entire Tunis Area is at 100 devastation",
+        "difficulty": "Medium",
+        "id": 51,
+        "is_complete": false
+      },
+      {
+        "name": "Cherrypicking",
+        "description": "Conscript a 3 star general from a Daimyo Subject",
+        "difficulty": "Medium",
+        "id": 53,
+        "is_complete": false
+      },
+      {
+        "name": "Core-Fu",
+        "description": "Force a nation to revoke 5 cores in once peace deal as Corfu",
+        "difficulty": "Medium",
+        "id": 62,
+        "is_complete": false
+      },
+      {
+        "name": "Definitely the Sultan of Rum",
+        "description": "Own and have cores on Rome, Moscow and Istanbul as Ottomans",
+        "difficulty": "Medium",
+        "id": 69,
+        "is_complete": false
+      },
+      {
+        "name": "Don't be Cilli",
+        "description": "Starting as Cilli, form another nation.",
+        "difficulty": "Medium",
+        "id": 72,
+        "is_complete": false
+      },
+      {
+        "name": "Even better than Piet Heyn",
+        "description": "Gain over 100 gold from privateering a single treasure fleet",
+        "difficulty": "Medium",
+        "id": 83,
+        "is_complete": false
+      },
+      {
+        "name": "Fine Financials",
+        "description": "Own Eight level 3 Centres of Trade.",
+        "difficulty": "Medium",
+        "id": 87,
+        "is_complete": false
+      },
+      {
+        "name": "For Odin!",
+        "description": "Starting as a Norse custom nation with no more than 200 points and a maximum of 5 provinces, own & core Scandinavia and the British Isles and convert it all to Norse.",
+        "difficulty": "Medium",
+        "id": 89,
+        "is_complete": false
+      },
+      {
+        "name": "Ganges Khan",
+        "description": "Start as Tribal nation in India and become a Steppe Horde.",
+        "difficulty": "Medium",
+        "id": 99,
+        "is_complete": false
+      },
+      {
+        "name": "Georgia on my Mind",
+        "description": "Fully own all three Georgias",
+        "difficulty": "Medium",
+        "id": 101,
+        "is_complete": false
+      },
+      {
+        "name": "Gold Rush",
+        "description": "Reform the Golden Horde before 1500",
+        "difficulty": "Medium",
+        "id": 104,
+        "is_complete": false
+      },
+      {
+        "name": "Golden Horn",
+        "description": "As a Somali nation, fully own the Horn of Africa and have a monthly gold income of at least 10 ducats.",
+        "difficulty": "Medium",
+        "id": 105,
+        "is_complete": false
+      },
+      {
+        "name": "Great Moravia",
+        "description": "Restore the Great Moravian borders as Nitra or Moravia.",
+        "difficulty": "Medium",
+        "id": 110,
+        "is_complete": false
+      },
+      {
+        "name": "Hessian Mercenaires",
+        "description": "As Hesse, have at least 50 regiments of mercenaries and no loans",
+        "difficulty": "Medium",
+        "id": 114,
+        "is_complete": false
+      },
+      {
+        "name": "Hoarder",
+        "description": "As a Fetishist nation, have 13 available cults",
+        "difficulty": "Medium",
+        "id": 115,
+        "is_complete": false
+      },
+      {
+        "name": "Home and Away",
+        "description": "As Wales, hold Cardiff, Dublin, Edinburgh, Rome, Paris and London.",
+        "difficulty": "Medium",
+        "id": 118,
+        "is_complete": false
+      },
+      {
+        "name": "Ideas Guy",
+        "description": "Starting as a custom nation with the full 800 points but no more than 3 total development, have a montly income of at least 500 ducats",
+        "difficulty": "Medium",
+        "id": 120,
+        "is_complete": false
+      },
+      {
+        "name": "Industrial Powerhouse",
+        "description": "Have 10 furnaces built in your nation.",
+        "difficulty": "Medium",
+        "id": 123,
+        "is_complete": false
+      },
+      {
+        "name": "Italian Ambition",
+        "description": "Form Italy",
+        "difficulty": "Medium",
+        "id": 129,
+        "is_complete": false
+      },
+      {
+        "name": "Je maintiendrai",
+        "description": "form the Netherlands as a minor nation starting with Dutch Culture",
+        "difficulty": "Medium",
+        "id": 130,
+        "is_complete": false
+      },
+      {
+        "name": "Kingdom of God",
+        "description": "Starting as the Papal State, become the Kingdom of God",
+        "difficulty": "Medium",
+        "id": 135,
+        "is_complete": false
+      },
+      {
+        "name": "Kirishitan Japan",
+        "description": "Start as a Japanese Daimyo, convert yourself and all of Japan to Christianity.",
+        "difficulty": "Medium",
+        "id": 137,
+        "is_complete": false
+      },
+      {
+        "name": "Kuban cigars",
+        "description": "As Kuba, own or have a subject own Havana and be the world's leading producer of Tobacco",
+        "difficulty": "Medium",
+        "id": 141,
+        "is_complete": false
+      },
+      {
+        "name": "Kushite Restoration",
+        "description": "As a Nubian culture nation, own the entire Egyptian region as core provinces",
+        "difficulty": "Medium",
+        "id": 142,
+        "is_complete": false
+      },
+      {
+        "name": "Laughingstock",
+        "description": "Own the provinces of Haha, Hehe and Lolland.",
+        "difficulty": "Medium",
+        "id": 144,
+        "is_complete": false
+      },
+      {
+        "name": "Lessons of Hemmingstedt",
+        "description": "As Dithmarschen, hold the provinces of Sjaelland and Holland while Denmark do not exist.",
+        "difficulty": "Medium",
+        "id": 146,
+        "is_complete": false
+      },
+      {
+        "name": "Lion of the North",
+        "description": "Start as Sweden and lead the Protestand League to victory against the Emperor",
+        "difficulty": "Medium",
+        "id": 148,
+        "is_complete": false
+      },
+      {
+        "name": "Live Long and Prosper",
+        "description": "Have 30 states with prosperity at the same time as you have a 70 year old ruler",
+        "difficulty": "Medium",
+        "id": 149,
+        "is_complete": false
+      },
+      {
+        "name": "Market control",
+        "description": "Be trade leader of seven different goods",
+        "difficulty": "Medium",
+        "id": 156,
+        "is_complete": false
+      },
+      {
+        "name": "Mary of Lotharingia",
+        "description": "Starting as Burgundy, form Lotharingia and have a female ruler named Marie.",
+        "difficulty": "Medium",
+        "id": 158,
+        "is_complete": false
+      },
+      {
+        "name": "My armies are invincible!",
+        "description": "Gain at least 7.0 land morale.",
+        "difficulty": "Medium",
+        "id": 164,
+        "is_complete": false
+      },
+      {
+        "name": "Napoleon’s Ambition",
+        "description": "As Revolutionary France, spread the Revolution to 10 countries.",
+        "difficulty": "Medium",
+        "id": 166,
+        "is_complete": false
+      },
+      {
+        "name": "Neither Holy, Nor German",
+        "description": "Have 7 free cities in the empire, none of which is of Germanic culture.",
+        "difficulty": "Medium",
+        "id": 168,
+        "is_complete": false
+      },
+      {
+        "name": "No Pirates in my Carribbean",
+        "description": "Own or have a subject own the entire Carribean",
+        "difficulty": "Medium",
+        "id": 171,
+        "is_complete": false
+      },
+      {
+        "name": "No Trail of Tears",
+        "description": "Own and have cores on the Thirteen Colonies as Cherokee with all institutions embraced",
+        "difficulty": "Medium",
+        "id": 172,
+        "is_complete": false
+      },
+      {
+        "name": "Parisian Pasha",
+        "description": "Assign Pasha to Paris.",
+        "difficulty": "Medium",
+        "id": 185,
+        "is_complete": false
+      },
+      {
+        "name": "Poland can into Space",
+        "description": "As Poland, reach the maximum level of all technologies",
+        "difficulty": "Medium",
+        "id": 189,
+        "is_complete": false
+      },
+      {
+        "name": "Redecorating",
+        "description": "Starting as an Orthodox Nation, Consecrate Metropolitan in Roma.",
+        "difficulty": "Medium",
+        "id": 199,
+        "is_complete": false
+      },
+      {
+        "name": "Rekindling the Flames",
+        "description": "Starting as a Zoroastrian Custom nation with no more than 200 points and a maximum of 5 provinces, rekindle the holy fires",
+        "difficulty": "Medium",
+        "id": 200,
+        "is_complete": false
+      },
+      {
+        "name": "Rise of the White Sheep",
+        "description": "As Aq Qoyunlu, own Tabriz and have Qara Qoyunlu not exist by 1478.",
+        "difficulty": "Medium",
+        "id": 203,
+        "is_complete": false
+      },
+      {
+        "name": "Ruina Imperii",
+        "description": "Dismantle the Holy Roman Empire",
+        "difficulty": "Medium",
+        "id": 206,
+        "is_complete": false
+      },
+      {
+        "name": "Sakoku Law",
+        "description": "Go full isolationist in 6 incidents.",
+        "difficulty": "Medium",
+        "id": 208,
+        "is_complete": false
+      },
+      {
+        "name": "Sinaasappel!",
+        "description": "Get Orangists in power with 100% Republican Tradition, and owning an province in China",
+        "difficulty": "Medium",
+        "id": 213,
+        "is_complete": false
+      },
+      {
+        "name": "Sleepless in Seattle",
+        "description": "Own 10 Coffee producing provinces, and have your capital in Salish.",
+        "difficulty": "Medium",
+        "id": 214,
+        "is_complete": false
+      },
+      {
+        "name": "Sweden is not overpowered!",
+        "description": "Own and have cores on the entire Baltic coastline as Sweden",
+        "difficulty": "Medium",
+        "id": 225,
+        "is_complete": false
+      },
+      {
+        "name": "Sweet Harmony",
+        "description": "Harmonize 7 religions as Confucian",
+        "difficulty": "Medium",
+        "id": 226,
+        "is_complete": false
+      },
+      {
+        "name": "Switzerlake",
+        "description": "Own 99 provinces as Switzerland while owning no ports",
+        "difficulty": "Medium",
+        "id": 228,
+        "is_complete": false
+      },
+      {
+        "name": "Take that, Von Habsburgs!",
+        "description": "As Hungary, own all of Austria as core provinces",
+        "difficulty": "Medium",
+        "id": 230,
+        "is_complete": false
+      },
+      {
+        "name": "Tatarstan",
+        "description": "As Kazan or Nogai, own all Tatar culture group lands",
+        "difficulty": "Medium",
+        "id": 231,
+        "is_complete": false
+      },
+      {
+        "name": "The Bohemians",
+        "description": "As Bohemia, own Dublin as a core province",
+        "difficulty": "Medium",
+        "id": 240,
+        "is_complete": false
+      },
+      {
+        "name": "The Burgundian Conquest",
+        "description": "As Burgundy, own the Low Countries region as core provinces and have France and Austria as your subjects",
+        "difficulty": "Medium",
+        "id": 242,
+        "is_complete": false
+      },
+      {
+        "name": "The Iron Price",
+        "description": "Restore the Danelaw region to Danish rule, and make it Danish culture.",
+        "difficulty": "Medium",
+        "id": 252,
+        "is_complete": false
+      },
+      {
+        "name": "The League of Mayapan",
+        "description": "Starting as Huastec, form Maya.",
+        "difficulty": "Medium",
+        "id": 253,
+        "is_complete": false
+      },
+      {
+        "name": "The Levant Turnabout",
+        "description": "As the Mamluks, have 100 Army Professionalism and annex the Ottomans.",
+        "difficulty": "Medium",
+        "id": 254,
+        "is_complete": false
+      },
+      {
+        "name": "The Navigator",
+        "description": "As Portugal, get owned provinces in Africa, India and Indonesia before 1500",
+        "difficulty": "Medium",
+        "id": 255,
+        "is_complete": false
+      },
+      {
+        "name": "The Ostenders",
+        "description": "As Austria have the District and Military Administration investments in the West Bengal area.",
+        "difficulty": "Medium",
+        "id": 256,
+        "is_complete": false
+      },
+      {
+        "name": "The Prince of Egypt",
+        "description": "Starting as Florence, form Egypt.",
+        "difficulty": "Medium",
+        "id": 259,
+        "is_complete": false
+      },
+      {
+        "name": "The Rising Sun",
+        "description": "Own and have cores on all of Japan as a European Nation",
+        "difficulty": "Medium",
+        "id": 262,
+        "is_complete": false
+      },
+      {
+        "name": "The Sudanese Expedition",
+        "description": "Starting as Morocco, conquer the Niger and Sahel regions",
+        "difficulty": "Medium",
+        "id": 265,
+        "is_complete": false
+      },
+      {
+        "name": "The Uncommonwealth",
+        "description": "As Lithuania become the commonwealth",
+        "difficulty": "Medium",
+        "id": 269,
+        "is_complete": false
+      },
+      {
+        "name": "The white Elephant",
+        "description": "As Ayutthaya, own all of Indochina as core provinces.",
+        "difficulty": "Medium",
+        "id": 271,
+        "is_complete": false
+      },
+      {
+        "name": "This navy can take it all",
+        "description": "Gain at least 7.0 navy morale",
+        "difficulty": "Medium",
+        "id": 275,
+        "is_complete": false
+      },
+      {
+        "name": "This Revolution Was Crushed",
+        "description": "In a war against the target of the Revolution, control their capital and have at least 99% warscore.",
+        "difficulty": "Medium",
+        "id": 276,
+        "is_complete": false
+      },
+      {
+        "name": "Total Control",
+        "description": "Own 100 or more provinces with no local autonomy or unrest",
+        "difficulty": "Medium",
+        "id": 280,
+        "is_complete": false
+      },
+      {
+        "name": "Traditional Player",
+        "description": "More than 90% naval and army tradition",
+        "difficulty": "Medium",
+        "id": 282,
+        "is_complete": false
+      },
+      {
+        "name": "Trophy Hunter",
+        "description": "Capture an enemy flagship.",
+        "difficulty": "Medium",
+        "id": 283,
+        "is_complete": false
+      },
+      {
+        "name": "Trustworthy",
+        "description": "Have five allies with 100 trust towards you each",
+        "difficulty": "Medium",
+        "id": 287,
+        "is_complete": false
+      },
+      {
+        "name": "Turtles all the way down",
+        "description": "As Korea get 135% ship durability",
+        "difficulty": "Medium",
+        "id": 291,
+        "is_complete": false
+      },
+      {
+        "name": "Victorian Three",
+        "description": "As Busoga, Buganda or Karagwe, reach administrative, diplomatic and military technology level 32",
+        "difficulty": "Medium",
+        "id": 295,
+        "is_complete": false
+      },
+      {
+        "name": "Voltaire's Nightmare",
+        "description": "Have at least 100 countries in the HRE.",
+        "difficulty": "Medium",
+        "id": 298,
+        "is_complete": false
+      },
+      {
+        "name": "That's No Mon",
+        "description": "As Pegu, own at least 50 provinces that are not of the Mon culture.",
+        "difficulty": "Medium",
+        "id": 313,
+        "is_complete": false
+      }
+    ]
+  },
+  "easy": {
+    "collection": [
+      {
+        "name": "A Pile of Gold",
+        "description": "Own 10 provinces which produce gold.",
+        "difficulty": "Easy",
+        "id": 8,
+        "is_complete": false
+      },
+      {
+        "name": "A Protected Market",
+        "description": "Have 100% mercantilism",
+        "difficulty": "Easy",
+        "id": 9,
+        "is_complete": false
+      },
+      {
+        "name": "Absolutely",
+        "description": "Gain 100 absolutism",
+        "difficulty": "Easy",
+        "id": 13,
+        "is_complete": false
+      },
+      {
+        "name": "Abu Bakr II's Ambition",
+        "description": "Start as Mali and have 4 colonial subjects in South America",
+        "difficulty": "Easy",
+        "id": 14,
+        "is_complete": false
+      },
+      {
+        "name": "Agressive Expander",
+        "description": "Own 200 provinces.",
+        "difficulty": "Easy",
+        "id": 18,
+        "is_complete": false
+      },
+      {
+        "name": "All belongs to mother Russia",
+        "description": "Start as a country of Russian culture and form Russia",
+        "difficulty": "Easy",
+        "id": 20,
+        "is_complete": false
+      },
+      {
+        "name": "An Industrial Evolution",
+        "description": "As Great Britain, own all of England as core provinces and have at least 25 development in each province there.",
+        "difficulty": "Easy",
+        "id": 24,
+        "is_complete": false
+      },
+      {
+        "name": "At every continent",
+        "description": "Own one province on each continent.",
+        "difficulty": "Easy",
+        "id": 29,
+        "is_complete": false
+      },
+      {
+        "name": "Azur seme de lis or",
+        "description": "Get all the French cores as France.",
+        "difficulty": "Easy",
+        "id": 32,
+        "is_complete": false
+      },
+      {
+        "name": "Baa Baa Black Sheep",
+        "description": "As Qara Qoyunlu become the leading producer of wool",
+        "difficulty": "Easy",
+        "id": 33,
+        "is_complete": false
+      },
+      {
+        "name": "Black Jack",
+        "description": "Have at least 21 different subjects with 5 cities each and without any subject having more than 50% liberty desire. Trade companies don't count.",
+        "difficulty": "Easy",
+        "id": 43,
+        "is_complete": false
+      },
+      {
+        "name": "Blockader",
+        "description": "Blockade at least 10 ports of one enemy",
+        "difficulty": "Easy",
+        "id": 45,
+        "is_complete": false
+      },
+      {
+        "name": "Blood for the Sky God!",
+        "description": "As a Tengri nation, have Nahuatl as your syncretic faith",
+        "difficulty": "Easy",
+        "id": 46,
+        "is_complete": false
+      },
+      {
+        "name": "Bright Spark",
+        "description": "Have 50 Innovativeness.",
+        "difficulty": "Easy",
+        "id": 48,
+        "is_complete": false
+      },
+      {
+        "name": "Brothers in Arms",
+        "description": "Win a war as a secondary participant.",
+        "difficulty": "Easy",
+        "id": 49,
+        "is_complete": false
+      },
+      {
+        "name": "Center of Attention",
+        "description": "Own both a Protestant and a Reformed center of Reformation",
+        "difficulty": "Easy",
+        "id": 52,
+        "is_complete": false
+      },
+      {
+        "name": "Chop Chop",
+        "description": "With only one Monarch, have six different Consorts.",
+        "difficulty": "Easy",
+        "id": 54,
+        "is_complete": false
+      },
+      {
+        "name": "Cities of Cibola",
+        "description": "As Pueblo, own at least 7 provinces with 10 development each",
+        "difficulty": "Easy",
+        "id": 56,
+        "is_complete": false
+      },
+      {
+        "name": "City of Cities",
+        "description": "Own a core province with at least 60 development",
+        "difficulty": "Easy",
+        "id": 57,
+        "is_complete": false
+      },
+      {
+        "name": "Colonial Management",
+        "description": "Have 3 colonial governors that were directly appointed by you at the same time.",
+        "difficulty": "Easy",
+        "id": 59,
+        "is_complete": false
+      },
+      {
+        "name": "David the Builder",
+        "description": "As Imereti, form Georgia and have no free building slots.",
+        "difficulty": "Easy",
+        "id": 67,
+        "is_complete": false
+      },
+      {
+        "name": "Die please Die",
+        "description": "Have a ruler with 1 or lower in all three categories who is over the age of 70.",
+        "difficulty": "Easy",
+        "id": 70,
+        "is_complete": false
+      },
+      {
+        "name": "Disciples of Englightenment",
+        "description": "Starting as Dai Viet, have 10 nations follow the Mahayana Faith by 1500",
+        "difficulty": "Easy",
+        "id": 71,
+        "is_complete": false
+      },
+      {
+        "name": "Double the love",
+        "description": "Start with no unions and get two at the same time.",
+        "difficulty": "Easy",
+        "id": 73,
+        "is_complete": false
+      },
+      {
+        "name": "Down under",
+        "description": "Have a colony in Australia",
+        "difficulty": "Easy",
+        "id": 75,
+        "is_complete": false
+      },
+      {
+        "name": "Dude, Where's my Boat?",
+        "description": "Capture 20 boats with the Boarding Naval Doctrine.",
+        "difficulty": "Easy",
+        "id": 77,
+        "is_complete": false
+      },
+      {
+        "name": "Early-Modern Warfare",
+        "description": "Have 100 regiments at 100% Army Drill.",
+        "difficulty": "Easy",
+        "id": 78,
+        "is_complete": false
+      },
+      {
+        "name": "Electable!",
+        "description": "Become an elector in the HRE as a country which does not start as elector",
+        "difficulty": "Easy",
+        "id": 80,
+        "is_complete": false
+      },
+      {
+        "name": "Forgive me, for I have Sindh",
+        "description": "Become Christian as Sindh.",
+        "difficulty": "Easy",
+        "id": 93,
+        "is_complete": false
+      },
+      {
+        "name": "Four For Trade",
+        "description": "Form four trade companies and get bonus merchants from all of them",
+        "difficulty": "Easy",
+        "id": 95,
+        "is_complete": false
+      },
+      {
+        "name": "God Tier",
+        "description": "Become a Tier 5 Defender of the Faith as a nation that is neither Catholic nor Sunni.",
+        "difficulty": "Easy",
+        "id": 103,
+        "is_complete": false
+      },
+      {
+        "name": "Grand Coalition",
+        "description": "Join a coalition of more than 5 nations",
+        "difficulty": "Easy",
+        "id": 108,
+        "is_complete": false
+      },
+      {
+        "name": "Grand Duchy",
+        "description": "Starting as a Duchy, have 1k development while not upgrading your government rank.",
+        "difficulty": "Easy",
+        "id": 109,
+        "is_complete": false
+      },
+      {
+        "name": "Hard Bargaining",
+        "description": "As Defender of a Muslim Faith, propagate your religion in The Moluccas through trade to convert 5 provinces.",
+        "difficulty": "Easy",
+        "id": 113,
+        "is_complete": false
+      },
+      {
+        "name": "Holiest Roman Empire",
+        "description": "As either the Papal States or the Emperor, have the Papal States as an Elector while the HRE is officially Catholic.",
+        "difficulty": "Easy",
+        "id": 116,
+        "is_complete": false
+      },
+      {
+        "name": "Imperio espanöl",
+        "description": "As Spain, have Mexico, Panama, Havana, Cuzco in colonial nations under you",
+        "difficulty": "Easy",
+        "id": 121,
+        "is_complete": false
+      },
+      {
+        "name": "In the name of the father",
+        "description": "As an Orthodox country, have 100 patriarch authority",
+        "difficulty": "Easy",
+        "id": 122,
+        "is_complete": false
+      },
+      {
+        "name": "It's all about luck",
+        "description": "Win a battle against a great leader, without a leader.",
+        "difficulty": "Easy",
+        "id": 126,
+        "is_complete": false
+      },
+      {
+        "name": "Just a little patience",
+        "description": "Play a campaign from 1444 until 1820",
+        "difficulty": "Easy",
+        "id": 132,
+        "is_complete": false
+      },
+      {
+        "name": "Just Resting in my Account",
+        "description": "Corrupt the officials in a rival country",
+        "difficulty": "Easy",
+        "id": 133,
+        "is_complete": false
+      },
+      {
+        "name": "Kow-Tow",
+        "description": "As Ming, have a subject from each religion group",
+        "difficulty": "Easy",
+        "id": 139,
+        "is_complete": false
+      },
+      {
+        "name": "Land of Eastern Jade",
+        "description": "Own a core province in Central America as a Buddhist country",
+        "difficulty": "Easy",
+        "id": 143,
+        "is_complete": false
+      },
+      {
+        "name": "Made in Japan",
+        "description": "Embrace \"Manufacturies\" institution in Japan by 1655",
+        "difficulty": "Easy",
+        "id": 152,
+        "is_complete": false
+      },
+      {
+        "name": "Magellan's Voyage",
+        "description": "Make the first circumnavigation",
+        "difficulty": "Easy",
+        "id": 153,
+        "is_complete": false
+      },
+      {
+        "name": "Maharana Pratap",
+        "description": "Start as Mewar and field an army of 20 Rajput regiments.",
+        "difficulty": "Easy",
+        "id": 154,
+        "is_complete": false
+      },
+      {
+        "name": "Multiculturalism",
+        "description": "Have 4 different Cultures and 4 different religions represented in your court.",
+        "difficulty": "Easy",
+        "id": 163,
+        "is_complete": false
+      },
+      {
+        "name": "Networking",
+        "description": "Have 100 point spy networks in three Rival Nations",
+        "difficulty": "Easy",
+        "id": 169,
+        "is_complete": false
+      },
+      {
+        "name": "Nobody wants to die",
+        "description": "Own Timbuktu as Songhai",
+        "difficulty": "Easy",
+        "id": 173,
+        "is_complete": false
+      },
+      {
+        "name": "Not just Pizza",
+        "description": "Become a great power as Naples",
+        "difficulty": "Easy",
+        "id": 175,
+        "is_complete": false
+      },
+      {
+        "name": "On the edge of Madness",
+        "description": "As Aztecs, reach 95 doom, then go 20 years without Doom hitting 100.",
+        "difficulty": "Easy",
+        "id": 177,
+        "is_complete": false
+      },
+      {
+        "name": "One Family to Rule them All",
+        "description": "Have you dinasty on 8 thrones at the same time. Client states do not count.",
+        "difficulty": "Easy",
+        "id": 180,
+        "is_complete": false
+      },
+      {
+        "name": "One King to Rule!",
+        "description": "As Poland, become an absolute monarchy, abolishing the Sejm",
+        "difficulty": "Easy",
+        "id": 181,
+        "is_complete": false
+      },
+      {
+        "name": "One night in Paris",
+        "description": "Start in England, own and have a core on Paris (do not form another country unless it's Great Britain)",
+        "difficulty": "Easy",
+        "id": 182,
+        "is_complete": false
+      },
+      {
+        "name": "Pirate Bay of Janjira",
+        "description": "Have more than 50% Privateering power in the Gujarat trade node.",
+        "difficulty": "Easy",
+        "id": 188,
+        "is_complete": false
+      },
+      {
+        "name": "Queen of Mercury",
+        "description": "As Kilwa, own and have cores on Zanzibar and Bombay (North Konkan)",
+        "difficulty": "Easy",
+        "id": 196,
+        "is_complete": false
+      },
+      {
+        "name": "Relentless Push East",
+        "description": "Starting as a Russian nation, By 1600 own the East Siberian Coastline.",
+        "difficulty": "Easy",
+        "id": 201,
+        "is_complete": false
+      },
+      {
+        "name": "Respected",
+        "description": "Have 100 prestige, 100 legitimacy and three stability",
+        "difficulty": "Easy",
+        "id": 202,
+        "is_complete": false
+      },
+      {
+        "name": "Royal Authority",
+        "description": "Install a union through a succession war",
+        "difficulty": "Easy",
+        "id": 204,
+        "is_complete": false
+      },
+      {
+        "name": "Rozwi Empire",
+        "description": "Starting as Butua, conquer Mutapa (Zimbabwe and Lower Zambezi areas)",
+        "difficulty": "Easy",
+        "id": 205,
+        "is_complete": false
+      },
+      {
+        "name": "Sikh Pun",
+        "description": "Convert to Sikhism and form the nation of Punjab.",
+        "difficulty": "Easy",
+        "id": 212,
+        "is_complete": false
+      },
+      {
+        "name": "Strait Talk",
+        "description": "As Hormuz, have at least 10 diplomatic reputation",
+        "difficulty": "Easy",
+        "id": 221,
+        "is_complete": false
+      },
+      {
+        "name": "Sweet Home Qaraqorum",
+        "description": "As the Mughals assimilate Mongolian culture.",
+        "difficulty": "Easy",
+        "id": 227,
+        "is_complete": false
+      },
+      {
+        "name": "The Coin is Stronger than the Sword",
+        "description": "Charter Company from an Indian nation.",
+        "difficulty": "Easy",
+        "id": 244,
+        "is_complete": false
+      },
+      {
+        "name": "The emperors new clothes",
+        "description": "Overthrow Austria and become the emperor of the Holy Roman Empire",
+        "difficulty": "Easy",
+        "id": 246,
+        "is_complete": false
+      },
+      {
+        "name": "The five colonies",
+        "description": "Have five colonial nations",
+        "difficulty": "Easy",
+        "id": 249,
+        "is_complete": false
+      },
+      {
+        "name": "The princess is in this castle",
+        "description": "As a country that does not start with a female heir, have a female heir while having a castle in your capital (more advanced fort buildings do not count)",
+        "difficulty": "Easy",
+        "id": 260,
+        "is_complete": false
+      },
+      {
+        "name": "The six Nations",
+        "description": "Form a federation of at least six nations as the Iroquois",
+        "difficulty": "Easy",
+        "id": 263,
+        "is_complete": false
+      },
+      {
+        "name": "The Spice Must Flow",
+        "description": "Form the nation os Malaya.",
+        "difficulty": "Easy",
+        "id": 264,
+        "is_complete": false
+      },
+      {
+        "name": "The White Company",
+        "description": "Join the war on the other side of someone to whom you have rented condottieri",
+        "difficulty": "Easy",
+        "id": 270,
+        "is_complete": false
+      },
+      {
+        "name": "Trade Hegemon",
+        "description": "Starting as any European country, conquer and have cores on Aden, Hormuz and Malacca",
+        "difficulty": "Easy",
+        "id": 281,
+        "is_complete": false
+      },
+      {
+        "name": "True Catholic",
+        "description": "Control three cardinals",
+        "difficulty": "Easy",
+        "id": 284,
+        "is_complete": false
+      },
+      {
+        "name": "Turn the Table",
+        "description": "As a colony, break free and vassalize your former overlord without forming another nation.",
+        "difficulty": "Easy",
+        "id": 289,
+        "is_complete": false
+      },
+      {
+        "name": "Turning the Tide",
+        "description": "Start as a steppe Horde in 1444 and embrace all institutions",
+        "difficulty": "Easy",
+        "id": 290,
+        "is_complete": false
+      },
+      {
+        "name": "Vasa or Wettin?",
+        "description": "Get a ruler of your dynasty on the throne of Poland or the Commonwealth while they are an elective monarchy",
+        "difficulty": "Easy",
+        "id": 293,
+        "is_complete": false
+      },
+      {
+        "name": "Voting Streak",
+        "description": "Successfully pass 11 issues in a row in Parliament",
+        "difficulty": "Easy",
+        "id": 299,
+        "is_complete": false
+      },
+      {
+        "name": "Where am I?",
+        "description": "As a New World native with Random New World active, explore the entire New World.",
+        "difficulty": "Easy",
+        "id": 301,
+        "is_complete": false
+      },
+      {
+        "name": "Winged Hussars",
+        "description": "Have Winged Hussars as your acive unit with more than 50% cavalry combat ability.",
+        "difficulty": "Easy",
+        "id": 304,
+        "is_complete": false
+      },
+      {
+        "name": "World Discoverer",
+        "description": "Discover all non-wasteland land provinces.",
+        "difficulty": "Easy",
+        "id": 307,
+        "is_complete": false
+      },
+      {
+        "name": "You Get A New Home, And You Get A New Home",
+        "description": "Expel 5 different minorities to your colonies.",
+        "difficulty": "Easy",
+        "id": 309,
+        "is_complete": false
+      },
+      {
+        "name": "The Power of Three",
+        "description": "Own a Crown Colony, a Self-Governing Colony and a Private Enterprise.",
+        "difficulty": "Easy",
+        "id": 311,
+        "is_complete": false
+      },
+      {
+        "name": "To the Bone",
+        "description": "As Bone, use pillage capital at least 7 times.",
+        "difficulty": "Easy",
+        "id": 312,
+        "is_complete": false
+      }
+    ]
+  },
+  "very_easy": {
+    "collection": [
+      {
+        "name": "A Golden Empire!",
+        "description": "Enact a golden age as an empire",
+        "difficulty": "Very Easy",
+        "id": 4,
+        "is_complete": false
+      },
+      {
+        "name": "AAA Credit",
+        "description": "As a great power, take on over 1000 ducats of another nation's debt",
+        "difficulty": "Very Easy",
+        "id": 12,
+        "is_complete": false
+      },
+      {
+        "name": "All that's thine shall be mine",
+        "description": "As a greedy ruler, take all of a nation's ducats in a peace deal",
+        "difficulty": "Very Easy",
+        "id": 21,
+        "is_complete": false
+      },
+      {
+        "name": "Cold War",
+        "description": "Win a war without fighting a single battle.",
+        "difficulty": "Very Easy",
+        "id": 58,
+        "is_complete": false
+      },
+      {
+        "name": "Combined Arms",
+        "description": "Have both an admiral and a general with a trait.",
+        "difficulty": "Very Easy",
+        "id": 60,
+        "is_complete": false
+      },
+      {
+        "name": "Cowardly Tactics",
+        "description": "Have a fort and a supply depot in a mountainous province producing livestock.",
+        "difficulty": "Very Easy",
+        "id": 64,
+        "is_complete": false
+      },
+      {
+        "name": "Czechs and Balances",
+        "description": "Starting as Bohemia, grant at least two privileges to each estate while having at least 50% Crown Land.",
+        "difficulty": "Very Easy",
+        "id": 65,
+        "is_complete": false
+      },
+      {
+        "name": "Defender of the faith",
+        "description": "Become the defender of the faith.",
+        "difficulty": "Very Easy",
+        "id": 68,
+        "is_complete": false
+      },
+      {
+        "name": "Factionalism",
+        "description": "Have three different estates in your country with at least 70% influence each.",
+        "difficulty": "Very Easy",
+        "id": 85,
+        "is_complete": false
+      },
+      {
+        "name": "For the Glory.",
+        "description": "Diplo-Annex a vassal.",
+        "difficulty": "Very Easy",
+        "id": 90,
+        "is_complete": false
+      },
+      {
+        "name": "Foul Mouthed",
+        "description": "Scornfully insult 10 nations that border you.",
+        "difficulty": "Very Easy",
+        "id": 94,
+        "is_complete": false
+      },
+      {
+        "name": "Full House",
+        "description": "Have 3 vassals and 2 marches at the same time",
+        "difficulty": "Very Easy",
+        "id": 98,
+        "is_complete": false
+      },
+      {
+        "name": "Gentle persuasion",
+        "description": "Have a siege specialist general win a siege in a province with a fort",
+        "difficulty": "Very Easy",
+        "id": 100,
+        "is_complete": false
+      },
+      {
+        "name": "Isn't this the way to India?",
+        "description": "Discover the Americas as Castile or Spain",
+        "difficulty": "Very Easy",
+        "id": 125,
+        "is_complete": false
+      },
+      {
+        "name": "It's all about the money",
+        "description": "Accumulate 3000 gold.",
+        "difficulty": "Very Easy",
+        "id": 127,
+        "is_complete": false
+      },
+      {
+        "name": "Krabater",
+        "description": "Form the nation of Croatia and station a unit of cavalry in Stockholm",
+        "difficulty": "Very Easy",
+        "id": 140,
+        "is_complete": false
+      },
+      {
+        "name": "Liberty or Death",
+        "description": "Start as USA in 1776 bookmark and own all your cores while being at peace",
+        "difficulty": "Very Easy",
+        "id": 147,
+        "is_complete": false
+      },
+      {
+        "name": "Marshy March",
+        "description": "Have a march with at least 2 marsh provinces.",
+        "difficulty": "Very Easy",
+        "id": 157,
+        "is_complete": false
+      },
+      {
+        "name": "My true Friend",
+        "description": "Go to war in support of a rebel faction and win, enforcing their demands",
+        "difficulty": "Very Easy",
+        "id": 165,
+        "is_complete": false
+      },
+      {
+        "name": "Narcissism",
+        "description": "Name a general after yourself and lead your army to victory.",
+        "difficulty": "Very Easy",
+        "id": 167,
+        "is_complete": false
+      },
+      {
+        "name": "Not so sad a state",
+        "description": "As portugal, have a colony in Brazil and in Africa",
+        "difficulty": "Very Easy",
+        "id": 176,
+        "is_complete": false
+      },
+      {
+        "name": "Populists in Government",
+        "description": "Switch government type through government reforms.",
+        "difficulty": "Very Easy",
+        "id": 190,
+        "is_complete": false
+      },
+      {
+        "name": "Pyramid of Skulls",
+        "description": "As a Stepp Horde, raze a province with at least 30 development",
+        "difficulty": "Very Easy",
+        "id": 193,
+        "is_complete": false
+      },
+      {
+        "name": "Queen of Conquest",
+        "description": "Conquer land while in a queen regency",
+        "difficulty": "Very Easy",
+        "id": 195,
+        "is_complete": false
+      },
+      {
+        "name": "Seriously!?",
+        "description": "Kill 10,000 men in one battle.",
+        "difficulty": "Very Easy",
+        "id": 210,
+        "is_complete": false
+      },
+      {
+        "name": "Subsidize My Love",
+        "description": "Subsidize three different allies at least 50% of their monthly income without running a deficit.",
+        "difficulty": "Very Easy",
+        "id": 222,
+        "is_complete": false
+      },
+      {
+        "name": "Tear down this Wall",
+        "description": "Use Artillery barrage on Berlin",
+        "difficulty": "Very Easy",
+        "id": 232,
+        "is_complete": false
+      },
+      {
+        "name": "That is mine!",
+        "description": "Conquer a province.",
+        "difficulty": "Very Easy",
+        "id": 234,
+        "is_complete": false
+      },
+      {
+        "name": "That's a grand army",
+        "description": "Build up your army to your country's maximum army force limit.",
+        "difficulty": "Very Easy",
+        "id": 235,
+        "is_complete": false
+      },
+      {
+        "name": "That's a grand navy",
+        "description": "Build up your navy to your country's maximum navy force limit.",
+        "difficulty": "Very Easy",
+        "id": 236,
+        "is_complete": false
+      },
+      {
+        "name": "The continuation of diplomacy",
+        "description": "Successfully use 'Threaten war' to gain a province from another nation",
+        "difficulty": "Very Easy",
+        "id": 245,
+        "is_complete": false
+      },
+      {
+        "name": "This is my faith",
+        "description": "Convert to Protestantism and unlock 3 aspects of faith",
+        "difficulty": "Very Easy",
+        "id": 273,
+        "is_complete": false
+      },
+      {
+        "name": "Three Trivial Tributary Tribes",
+        "description": "Have three tribal states as tributaries",
+        "difficulty": "Very Easy",
+        "id": 277,
+        "is_complete": false
+      },
+      {
+        "name": "Time Bandit",
+        "description": "Successfully steal a map from another nation",
+        "difficulty": "Very Easy",
+        "id": 279,
+        "is_complete": false
+      },
+      {
+        "name": "Truly Divine Ruler",
+        "description": "Get a 5/5/5 ruler",
+        "difficulty": "Very Easy",
+        "id": 286,
+        "is_complete": false
+      },
+      {
+        "name": "Until death to us part",
+        "description": "Secure a royal marriage with another country",
+        "difficulty": "Very Easy",
+        "id": 292,
+        "is_complete": false
+      },
+      {
+        "name": "Victorious!",
+        "description": "Win a war.",
+        "difficulty": "Very Easy",
+        "id": 296,
+        "is_complete": false
+      },
+      {
+        "name": "Viva la Revolución!",
+        "description": "Have rebels you support in another country enforce their demands",
+        "difficulty": "Very Easy",
+        "id": 297,
+        "is_complete": false
+      }
+    ]
+  }
+}
