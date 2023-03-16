@@ -44,7 +44,15 @@ pub fn run() -> Result<(), Box<dyn std::error::Error>> {
     }
 
     if args.len() < 2 {
-        eprintln!("ERROR: You need to provide a arguement");
+        println!("USAGE:");
+        println!("     eu4ach random: random achievement");
+        println!("     eu4ach veasy: random very easy achievement");
+        println!("     eu4ach easy: random  easy achievement");
+        println!("     eu4ach medium: random  medium achievement");
+        println!("     eu4ach hard: random hard achievement");
+        println!("     eu4ach very_hard: random very hard achievement");
+        println!("     eu4ach complete <id : number>: complete achievement");
+
         std::process::exit(0);
     }
 

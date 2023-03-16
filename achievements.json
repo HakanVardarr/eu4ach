@@ -402,7 +402,7 @@
         "description": "As France, own Vienna, Berlin and Moscow as core provinces",
         "difficulty": "Hard",
         "id": 41,
-        "is_complete": false
+        "is_complete": true
       },
       {
         "name": "Bunte Kuh",
@@ -814,6 +814,20 @@
   },
   "medium": {
     "collection": [
+      {
+        "name": "Super Trooper",
+        "description": "Starting as Sweden, enact the Allotment System goverment reform, have 80 regriments of Carolean raised at the same time with at least +40% infantry combat ability.",
+        "difficulty": "Medium",
+        "id": 323,
+        "is_complete": false
+      },
+      {
+        "name": "Hanukkah Mutapa",
+        "description": "Starting as Mutapa, convert to Judaisim and celebrate a festival",
+        "difficulty": "Medium",
+        "id": 322,
+        "is_complete": false
+      },
       {
         "name": "A Fine Goosestep",
         "description": "Form Prussia and have at least 125% discipline",
@@ -1378,6 +1392,27 @@
   },
   "easy": {
     "collection": [
+      {
+        "name": "Purify the Temple",
+        "description": "Starting as Riga, enact the Salvific Plutocracy government reform and raid the heretic church of Rome.",
+        "difficulty": "Easy",
+        "id": 321,
+        "is_complete": false
+      },
+      {
+        "name": "Let It Go!",
+        "description": "Starting as Norway, have your capital in Canada region while not owning any province in Scandinavia and not playing as a released subject.",
+        "difficulty": "Easy",
+        "id": 320,
+        "is_complete": false
+      },
+      {
+        "name": "Brick By Brick",
+        "description": "Starting as Denmark, enact the Unified Kalmar Monarchy government reform and own the entire Scandinavian region as your cores.",
+        "difficulty": "Easy",
+        "id": 319,
+        "is_complete": false
+      },
       {
         "name": "A Pile of Gold",
         "description": "Own 10 provinces which produce gold.",
