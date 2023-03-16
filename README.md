@@ -8,6 +8,6 @@ USAGE:
      eu4ach.exe easy: random  easy achievement
      eu4ach.exe medium: random  medium achievement
      eu4ach.exe hard: random hard achievement
-     eu4ach.exe very_hard: random very hard achievement
+     eu4ach.exe vhard: random very hard achievement
      eu4ach.exe complete <id : number>: complete achievement
 ```
