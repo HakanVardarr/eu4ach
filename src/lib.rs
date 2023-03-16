@@ -55,7 +55,6 @@ pub fn run() -> Result<(), Box<dyn std::error::Error>> {
         println!("     eu4ach track <id : number>:    tracks the given achievement");
         println!("     eu4ach current:                current achievement");
         println!("     eu4ach clear:                  clears the current achievement");
-
         std::process::exit(0);
     }
 
