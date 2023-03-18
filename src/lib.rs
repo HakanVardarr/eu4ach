@@ -233,7 +233,9 @@ pub fn draw_achievementt(ty: &str) -> Result<()> {
                                 ),
                                 crossterm::cursor::Hide,
                             )?;
-                            track_achievement(list, id.parse::<usize>().unwrap());
+                            if id.len() > 0 {
+                                track_achievement(list, id.parse::<usize>().unwrap());
+                            }
                             break;
                         }
                         (crossterm::event::KeyCode::Esc, crossterm::event::KeyEventKind::Press) => {
