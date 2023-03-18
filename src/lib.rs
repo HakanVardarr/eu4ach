@@ -1,5 +1,9 @@
+use crossterm::terminal::size;
+use crossterm::{execute, Result};
 use rand::Rng;
-use std::io::{Read, Write};
+use std::fs::File;
+use std::io::Read;
+use std::io::{stdout, Write};
 
 mod types;
 use types::{
@@ -7,13 +11,14 @@ use types::{
     VeryEasyAchievements, VeryHardAchievements,
 };
 
-pub fn run() -> Result<(), Box<dyn std::error::Error>> {
-    let args = std::env::args().collect::<Vec<String>>();
-    let mut file = std::fs::File::open("achievements.json")?;
+pub fn draw_achievementt(ty: &str) -> Result<()> {
+    let mut file = File::open("achievements.json").unwrap();
     let mut text = String::new();
     file.read_to_string(&mut text)?;
     let mut list: List = serde_json::from_str(&text)?;
     let mut count = 0;
+
+    let (row, _) = size()?;
 
     macro_rules! achievement {
         ($($name:ident).+) => {
@@ -23,12 +28,19 @@ pub fn run() -> Result<(), Box<dyn std::error::Error>> {
                 let i = rng.gen_range(0..list.$($name).+.collection.len());
 
                 if list.$($name).+.collection[i].is_complete == false {
-                    println!(
-                        "{} ({}): {}",
-                        list.$($name).+.collection[i].name.clone(),
-                        list.$($name).+.collection[i].id,
-                        list.$($name).+.collection[i].description.clone()
-                    );
+                    execute!(stdout(), crossterm::style::Print(format!("{} ({})", list.$($name).+.collection[i].name.clone(),
+                    list.$($name).+.collection[i].id,)))?;
+
+                    let len = list.$($name).+.collection[i].description.len();
+
+                    if len > row as usize{
+                        let (half1, half2) =  list.$($name).+.collection[i].description.split_at(len / 2);
+                        execute!(stdout(),crossterm::cursor::MoveTo(10, 1), crossterm::style::Print(half1))?;
+                        execute!(stdout(),crossterm::cursor::MoveTo(10, 2), crossterm::style::Print(half2))?;
+                    } else{
+                        execute!(stdout(),crossterm::cursor::MoveTo(10, 1), crossterm::style::Print(list.$($name).+.collection[i].description.clone()))?;
+                    }
+
                     break 'outer;
                 } else {
                     if count == list.$($name).+.collection.len() {
@@ -43,23 +55,7 @@ pub fn run() -> Result<(), Box<dyn std::error::Error>> {
         };
     }
 
-    if args.len() < 2 {
-        println!("USAGE:");
-        println!("     eu4ach random:                 random achievement");
-        println!("     eu4ach veasy:                  random very easy achievement");
-        println!("     eu4ach easy:                   random  easy achievement");
-        println!("     eu4ach medium:                 random  medium achievement");
-        println!("     eu4ach hard:                   random hard achievement");
-        println!("     eu4ach very_hard:              random very hard achievement");
-        println!("     eu4ach complete <id : number>: complete achievement");
-        println!("     eu4ach track <id : number>:    tracks the given achievement");
-        println!("     eu4ach current:                current achievement");
-        println!("     eu4ach clear:                  clears the current achievement");
-        std::process::exit(0);
-    }
-
-    let arg = &args[1];
-    match arg.to_uppercase().as_str() {
+    match ty.to_uppercase().as_str() {
         "EASY" => {
             achievement!(easy)
         }
@@ -69,10 +65,10 @@ pub fn run() -> Result<(), Box<dyn std::error::Error>> {
         "MEDIUM" => {
             achievement!(medium)
         }
-        "VHARD" => {
+        "VERY HARD" => {
             achievement!(very_hard)
         }
-        "VEASY" => {
+        "VERY EASY" => {
             achievement!(very_easy);
         }
         "RANDOM" => {
@@ -88,16 +84,209 @@ pub fn run() -> Result<(), Box<dyn std::error::Error>> {
             };
         }
         "COMPLETE" => {
-            let id = &args[2].trim().parse::<usize>().unwrap();
-            complete_achievement(list, *id);
+            let mut id = String::new();
+            let mut i = 0;
+            execute!(
+                stdout(),
+                crossterm::style::Print("ID: "),
+                crossterm::cursor::Show,
+                crossterm::cursor::EnableBlinking,
+            )?;
+            loop {
+                match crossterm::event::read()? {
+                    crossterm::event::Event::Key(event) => match (event.code, event.kind) {
+                        (
+                            crossterm::event::KeyCode::Char(c),
+                            crossterm::event::KeyEventKind::Press,
+                        ) => {
+                            let c = c.to_digit(10);
+                            if let Some(n) = c {
+                                id.push_str(n.to_string().as_str());
+
+                                execute!(
+                                    stdout(),
+                                    crossterm::cursor::MoveTo(14 + i, 0),
+                                    crossterm::style::Print(n.to_string())
+                                )?;
+                                i += 1;
+                            }
+                        }
+                        (
+                            crossterm::event::KeyCode::Backspace,
+                            crossterm::event::KeyEventKind::Press,
+                        ) => {
+                            if i > 0 {
+                                id.pop();
+                                i -= 1;
+
+                                execute!(
+                                    stdout(),
+                                    crossterm::cursor::MoveTo(14 + i, 0),
+                                    crossterm::style::Print(" "),
+                                    crossterm::cursor::MoveTo(14 + i, 0)
+                                )?;
+                            }
+                        }
+                        (
+                            crossterm::event::KeyCode::Enter,
+                            crossterm::event::KeyEventKind::Press,
+                        ) => {
+                            execute!(
+                                stdout(),
+                                crossterm::cursor::MoveTo(10, 0),
+                                crossterm::style::SetBackgroundColor(
+                                    crossterm::style::Color::Reset
+                                ),
+                                crossterm::style::SetForegroundColor(
+                                    crossterm::style::Color::Reset
+                                ),
+                                crossterm::terminal::Clear(
+                                    crossterm::terminal::ClearType::UntilNewLine
+                                ),
+                                crossterm::cursor::Hide,
+                            )?;
+                            complete_achievement(list, id.parse::<usize>().unwrap());
+                            break;
+                        }
+                        (crossterm::event::KeyCode::Esc, crossterm::event::KeyEventKind::Press) => {
+                            execute!(
+                                stdout(),
+                                crossterm::cursor::MoveTo(10, 0),
+                                crossterm::style::SetBackgroundColor(
+                                    crossterm::style::Color::Reset
+                                ),
+                                crossterm::style::SetForegroundColor(
+                                    crossterm::style::Color::Reset
+                                ),
+                                crossterm::terminal::Clear(
+                                    crossterm::terminal::ClearType::UntilNewLine
+                                ),
+                                crossterm::cursor::Hide,
+                            )?;
+                            break;
+                        }
+                        _ => (),
+                    },
+                    _ => (),
+                }
+            }
         }
         "TRACK" => {
-            let id = &args[2].trim().parse::<usize>().unwrap();
-            track_achievement(list, *id);
+            let mut id = String::new();
+            let mut i = 0;
+            execute!(
+                stdout(),
+                crossterm::style::Print("ID: "),
+                crossterm::cursor::Show,
+                crossterm::cursor::EnableBlinking,
+            )?;
+            loop {
+                match crossterm::event::read()? {
+                    crossterm::event::Event::Key(event) => match (event.code, event.kind) {
+                        (
+                            crossterm::event::KeyCode::Char(c),
+                            crossterm::event::KeyEventKind::Press,
+                        ) => {
+                            let c = c.to_digit(10);
+                            if let Some(n) = c {
+                                id.push_str(n.to_string().as_str());
+
+                                execute!(
+                                    stdout(),
+                                    crossterm::cursor::MoveTo(14 + i, 0),
+                                    crossterm::style::Print(n.to_string())
+                                )?;
+                                i += 1;
+                            }
+                        }
+                        (
+                            crossterm::event::KeyCode::Backspace,
+                            crossterm::event::KeyEventKind::Press,
+                        ) => {
+                            if i > 0 {
+                                id.pop();
+                                i -= 1;
+
+                                execute!(
+                                    stdout(),
+                                    crossterm::cursor::MoveTo(14 + i, 0),
+                                    crossterm::style::Print(" "),
+                                    crossterm::cursor::MoveTo(14 + i, 0)
+                                )?;
+                            }
+                        }
+                        (
+                            crossterm::event::KeyCode::Enter,
+                            crossterm::event::KeyEventKind::Press,
+                        ) => {
+                            execute!(
+                                stdout(),
+                                crossterm::cursor::MoveTo(10, 0),
+                                crossterm::style::SetBackgroundColor(
+                                    crossterm::style::Color::Reset
+                                ),
+                                crossterm::style::SetForegroundColor(
+                                    crossterm::style::Color::Reset
+                                ),
+                                crossterm::terminal::Clear(
+                                    crossterm::terminal::ClearType::UntilNewLine
+                                ),
+                                crossterm::cursor::Hide,
+                            )?;
+                            track_achievement(list, id.parse::<usize>().unwrap());
+                            break;
+                        }
+                        (crossterm::event::KeyCode::Esc, crossterm::event::KeyEventKind::Press) => {
+                            execute!(
+                                stdout(),
+                                crossterm::cursor::MoveTo(10, 0),
+                                crossterm::style::SetBackgroundColor(
+                                    crossterm::style::Color::Reset
+                                ),
+                                crossterm::style::SetForegroundColor(
+                                    crossterm::style::Color::Reset
+                                ),
+                                crossterm::terminal::Clear(
+                                    crossterm::terminal::ClearType::UntilNewLine
+                                ),
+                                crossterm::cursor::Hide,
+                            )?;
+                            break;
+                        }
+                        _ => (),
+                    },
+                    _ => (),
+                }
+            }
         }
         "CURRENT" => {
             if let Some(ach) = list.current {
-                println!("{} ({}): {}", ach.name, ach.id, ach.description);
+                execute!(
+                    stdout(),
+                    crossterm::style::Print(format!("{} ({})", ach.name.clone(), ach.id,))
+                )?;
+
+                let len = ach.description.len();
+
+                if len > row as usize {
+                    let (half1, half2) = ach.description.split_at(len / 2);
+                    execute!(
+                        stdout(),
+                        crossterm::cursor::MoveTo(10, 1),
+                        crossterm::style::Print(half1)
+                    )?;
+                    execute!(
+                        stdout(),
+                        crossterm::cursor::MoveTo(10, 2),
+                        crossterm::style::Print(half2)
+                    )?;
+                } else {
+                    execute!(
+                        stdout(),
+                        crossterm::cursor::MoveTo(10, 1),
+                        crossterm::style::Print(ach.description.clone())
+                    )?;
+                }
             } else {
                 println!("You are not trackking an achievement right now");
             }
@@ -108,7 +297,6 @@ pub fn run() -> Result<(), Box<dyn std::error::Error>> {
             let text = serde_json::to_string_pretty(&list).unwrap();
             file.write_all(text.as_bytes()).unwrap();
         }
-
         _ => {}
     }
 
