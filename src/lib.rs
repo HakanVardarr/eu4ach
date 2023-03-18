@@ -1,17 +1,27 @@
+use crossterm::cursor::{EnableBlinking, Hide, MoveTo, Show};
+use crossterm::event::KeyCode::{Down, Enter, Esc, Up};
+use crossterm::event::KeyEventKind::Press;
+use crossterm::event::{read, Event, Event::Key, KeyCode::Backspace, KeyCode::Char};
+use crossterm::style::{Color::Reset, Print, SetBackgroundColor, SetForegroundColor};
 use crossterm::terminal::size;
+use crossterm::terminal::{
+    disable_raw_mode, enable_raw_mode, Clear,
+    ClearType::{FromCursorDown, FromCursorUp, UntilNewLine},
+};
 use crossterm::{execute, Result};
 use rand::Rng;
 use std::fs::File;
 use std::io::Read;
 use std::io::{stdout, Write};
-
+mod categories;
 mod types;
+pub use categories::Categories;
 use types::{
     Achievement, EasyAchievements, HardAchievements, List, MediumAchievements,
     VeryEasyAchievements, VeryHardAchievements,
 };
 
-pub fn draw_achievementt(ty: &str) -> Result<()> {
+fn command_match(ty: &str) -> Result<()> {
     let mut file = File::open("achievements.json").unwrap();
     let mut text = String::new();
     file.read_to_string(&mut text)?;
@@ -54,6 +64,38 @@ pub fn draw_achievementt(ty: &str) -> Result<()> {
             }
         };
     }
+    macro_rules! command {
+        ($command: ident) => {
+            let mut id = String::new();
+            let mut i = 0;
+            execute!(stdout(), Print("ID: "), Show, EnableBlinking,)?;
+            loop {
+                match read()? {
+                    Key(event) => match (event.code, event.kind) {
+                        (Char(c), Press) => {
+                            insert_char(c, &mut i, &mut id)?;
+                        }
+                        (Backspace, Press) => {
+                            remove_char(&mut i, &mut id)?;
+                        }
+                        (Enter, Press) => {
+                            clear_achievement()?;
+                            if id.len() > 0 {
+                                $command(list, id.parse::<usize>().unwrap());
+                            }
+                            break;
+                        }
+                        (Esc, Press) => {
+                            clear_achievement()?;
+                            break;
+                        }
+                        _ => (),
+                    },
+                    _ => (),
+                }
+            }
+        };
+    }
 
     match ty.to_uppercase().as_str() {
         "EASY" => {
@@ -84,182 +126,10 @@ pub fn draw_achievementt(ty: &str) -> Result<()> {
             };
         }
         "COMPLETE" => {
-            let mut id = String::new();
-            let mut i = 0;
-            execute!(
-                stdout(),
-                crossterm::style::Print("ID: "),
-                crossterm::cursor::Show,
-                crossterm::cursor::EnableBlinking,
-            )?;
-            loop {
-                match crossterm::event::read()? {
-                    crossterm::event::Event::Key(event) => match (event.code, event.kind) {
-                        (
-                            crossterm::event::KeyCode::Char(c),
-                            crossterm::event::KeyEventKind::Press,
-                        ) => {
-                            let c = c.to_digit(10);
-                            if let Some(n) = c {
-                                id.push_str(n.to_string().as_str());
-
-                                execute!(
-                                    stdout(),
-                                    crossterm::cursor::MoveTo(14 + i, 0),
-                                    crossterm::style::Print(n.to_string())
-                                )?;
-                                i += 1;
-                            }
-                        }
-                        (
-                            crossterm::event::KeyCode::Backspace,
-                            crossterm::event::KeyEventKind::Press,
-                        ) => {
-                            if i > 0 {
-                                id.pop();
-                                i -= 1;
-
-                                execute!(
-                                    stdout(),
-                                    crossterm::cursor::MoveTo(14 + i, 0),
-                                    crossterm::style::Print(" "),
-                                    crossterm::cursor::MoveTo(14 + i, 0)
-                                )?;
-                            }
-                        }
-                        (
-                            crossterm::event::KeyCode::Enter,
-                            crossterm::event::KeyEventKind::Press,
-                        ) => {
-                            execute!(
-                                stdout(),
-                                crossterm::cursor::MoveTo(10, 0),
-                                crossterm::style::SetBackgroundColor(
-                                    crossterm::style::Color::Reset
-                                ),
-                                crossterm::style::SetForegroundColor(
-                                    crossterm::style::Color::Reset
-                                ),
-                                crossterm::terminal::Clear(
-                                    crossterm::terminal::ClearType::UntilNewLine
-                                ),
-                                crossterm::cursor::Hide,
-                            )?;
-                            complete_achievement(list, id.parse::<usize>().unwrap());
-                            break;
-                        }
-                        (crossterm::event::KeyCode::Esc, crossterm::event::KeyEventKind::Press) => {
-                            execute!(
-                                stdout(),
-                                crossterm::cursor::MoveTo(10, 0),
-                                crossterm::style::SetBackgroundColor(
-                                    crossterm::style::Color::Reset
-                                ),
-                                crossterm::style::SetForegroundColor(
-                                    crossterm::style::Color::Reset
-                                ),
-                                crossterm::terminal::Clear(
-                                    crossterm::terminal::ClearType::UntilNewLine
-                                ),
-                                crossterm::cursor::Hide,
-                            )?;
-                            break;
-                        }
-                        _ => (),
-                    },
-                    _ => (),
-                }
-            }
+            command!(complete_achievement);
         }
         "TRACK" => {
-            let mut id = String::new();
-            let mut i = 0;
-            execute!(
-                stdout(),
-                crossterm::style::Print("ID: "),
-                crossterm::cursor::Show,
-                crossterm::cursor::EnableBlinking,
-            )?;
-            loop {
-                match crossterm::event::read()? {
-                    crossterm::event::Event::Key(event) => match (event.code, event.kind) {
-                        (
-                            crossterm::event::KeyCode::Char(c),
-                            crossterm::event::KeyEventKind::Press,
-                        ) => {
-                            let c = c.to_digit(10);
-                            if let Some(n) = c {
-                                id.push_str(n.to_string().as_str());
-
-                                execute!(
-                                    stdout(),
-                                    crossterm::cursor::MoveTo(14 + i, 0),
-                                    crossterm::style::Print(n.to_string())
-                                )?;
-                                i += 1;
-                            }
-                        }
-                        (
-                            crossterm::event::KeyCode::Backspace,
-                            crossterm::event::KeyEventKind::Press,
-                        ) => {
-                            if i > 0 {
-                                id.pop();
-                                i -= 1;
-
-                                execute!(
-                                    stdout(),
-                                    crossterm::cursor::MoveTo(14 + i, 0),
-                                    crossterm::style::Print(" "),
-                                    crossterm::cursor::MoveTo(14 + i, 0)
-                                )?;
-                            }
-                        }
-                        (
-                            crossterm::event::KeyCode::Enter,
-                            crossterm::event::KeyEventKind::Press,
-                        ) => {
-                            execute!(
-                                stdout(),
-                                crossterm::cursor::MoveTo(10, 0),
-                                crossterm::style::SetBackgroundColor(
-                                    crossterm::style::Color::Reset
-                                ),
-                                crossterm::style::SetForegroundColor(
-                                    crossterm::style::Color::Reset
-                                ),
-                                crossterm::terminal::Clear(
-                                    crossterm::terminal::ClearType::UntilNewLine
-                                ),
-                                crossterm::cursor::Hide,
-                            )?;
-                            if id.len() > 0 {
-                                track_achievement(list, id.parse::<usize>().unwrap());
-                            }
-                            break;
-                        }
-                        (crossterm::event::KeyCode::Esc, crossterm::event::KeyEventKind::Press) => {
-                            execute!(
-                                stdout(),
-                                crossterm::cursor::MoveTo(10, 0),
-                                crossterm::style::SetBackgroundColor(
-                                    crossterm::style::Color::Reset
-                                ),
-                                crossterm::style::SetForegroundColor(
-                                    crossterm::style::Color::Reset
-                                ),
-                                crossterm::terminal::Clear(
-                                    crossterm::terminal::ClearType::UntilNewLine
-                                ),
-                                crossterm::cursor::Hide,
-                            )?;
-                            break;
-                        }
-                        _ => (),
-                    },
-                    _ => (),
-                }
-            }
+            command!(track_achievement);
         }
         "CURRENT" => {
             if let Some(ach) = list.current {
@@ -304,7 +174,35 @@ pub fn draw_achievementt(ty: &str) -> Result<()> {
 
     Ok(())
 }
+fn insert_char(c: char, i: &mut u16, id: &mut String) -> Result<()> {
+    let c = c.to_digit(10);
+    if let Some(n) = c {
+        id.push_str(n.to_string().as_str());
+        execute!(stdout(), MoveTo(14 + *i, 0), Print(n.to_string()))?;
+        *i += 1;
+    }
 
+    Ok(())
+}
+fn remove_char(i: &mut u16, id: &mut String) -> Result<()> {
+    if *i > 0 {
+        id.pop();
+        *i -= 1;
+        execute!(stdout(), MoveTo(14 + *i, 0), Print(" "), MoveTo(14 + *i, 0))?;
+    }
+
+    Ok(())
+}
+fn clear_achievement() -> Result<()> {
+    execute!(
+        stdout(),
+        MoveTo(10, 0),
+        SetBackgroundColor(Reset),
+        SetForegroundColor(Reset),
+        Clear(UntilNewLine),
+        Hide,
+    )
+}
 fn track_achievement(list: List, id: usize) {
     let found = false;
     let mut very_easy: Vec<Achievement> = vec![];
@@ -351,7 +249,6 @@ fn track_achievement(list: List, id: usize) {
         file.write_all(text.as_bytes()).unwrap();
     }
 }
-
 fn complete_achievement(list: List, id: usize) {
     let found = false;
     let mut very_easy: Vec<Achievement> = vec![];
@@ -396,4 +293,86 @@ fn complete_achievement(list: List, id: usize) {
     let mut file = std::fs::File::create("achievements.json").unwrap();
     let text = serde_json::to_string_pretty(&new_list).unwrap();
     file.write_all(text.as_bytes()).unwrap();
+}
+pub fn run(mut categories: Categories) -> Result<()> {
+    let mut col = 0;
+
+    enable_raw_mode()?;
+    execute!(
+        stdout(),
+        Clear(FromCursorUp),
+        MoveTo(0, 0),
+        Hide,
+        MoveTo(0, col),
+    )?;
+
+    loop {
+        categories.draw(col)?;
+
+        match read()? {
+            Event::Key(event) => match (event.code, event.kind) {
+                (Esc, Press) => {
+                    execute!(
+                        stdout(),
+                        MoveTo(0, 0),
+                        SetForegroundColor(Reset),
+                        SetBackgroundColor(Reset),
+                        Clear(FromCursorDown),
+                        Show,
+                    )?;
+
+                    disable_raw_mode()?;
+                    break;
+                }
+                (Up, Press) => {
+                    if col > 0 {
+                        col -= 1;
+                    }
+
+                    execute!(stdout(), MoveTo(0, col))?;
+                }
+                (Down, Press) => {
+                    if col < 9 {
+                        col += 1;
+                    }
+
+                    execute!(stdout(), MoveTo(0, col))?;
+                }
+                (Enter, Press) => match col {
+                    0 => command("Very Hard")?,
+                    1 => command("Hard")?,
+                    2 => command("Medium")?,
+                    3 => command("Easy")?,
+                    4 => command("Very Easy")?,
+                    5 => command("Random")?,
+                    6 => command("Complete")?,
+                    7 => command("Track")?,
+                    8 => command("Current")?,
+                    9 => command("Clear")?,
+                    _ => (),
+                },
+                _ => (),
+            },
+            _ => (),
+        }
+    }
+
+    Ok(())
+}
+fn command(text: &str) -> Result<()> {
+    execute!(
+        stdout(),
+        MoveTo(10, 0),
+        SetBackgroundColor(Reset),
+        SetForegroundColor(Reset),
+        Clear(UntilNewLine),
+        MoveTo(10, 1),
+        Clear(UntilNewLine),
+        MoveTo(10, 2),
+        Clear(UntilNewLine),
+        MoveTo(10, 0),
+    )?;
+    command_match(text)?;
+
+    Ok(())
 }
